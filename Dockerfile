@@ -14,8 +14,7 @@ RUN \
 	/app && \
  cd /app && \
  npm install \
-	css-select \
-	shout && \
+	thelounge && \
 
 # cleanup
  npm cache clean

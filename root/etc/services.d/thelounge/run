@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv sh
 
-cd /app/node_modules/shout
+cd /app/node_modules/thelounge
 
 exec \
 	s6-setuidgid abc node index.js --home /config
