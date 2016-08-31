@@ -23,14 +23,14 @@ __What features does it have?__
 - Responsive layout — works well on your smartphone
 - _.. and more!_
 
-[![shoutirc](https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/shout-icon.png)][shouturl]
-[shouturl]: http://shout-irc.com/
+[![theloungeirc](https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/thelounge-icon.png)][theloungeurl]
+[theloungeurl]: http://thelounge-irc.com/
 
 ## Usage
 
 ```
 docker create \
-  --name=shout \
+  --name=thelounge \
   -v <path to data>:/config \
   -e PGID=<gid> -e PUID=<uid>  \
   -e TZ=<timezone> \
@@ -46,7 +46,7 @@ docker create \
 * `-e PUID` for UserID - see below for explanation
 * `-e TZ` for timezone information, eg Europe/London
 
-It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it shout /bin/bash`.
+It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it thelounge /bin/bash`.
 
 ### User / Group Identifiers
 
@@ -65,8 +65,8 @@ To log in to the application, browse to https://<hostip>:9000.
 
 ## Info
 
-* Shell access whilst the container is running: `docker exec -it shout /bin/bash`
-* To monitor the logs of the container in realtime: `docker logs -f shout`
+* Shell access whilst the container is running: `docker exec -it thelounge /bin/bash`
+* To monitor the logs of the container in realtime: `docker logs -f thelounge`
 
 ## Versions
 + **31.08.16:** Rebase to alpine linux, move to lsiocommunity
