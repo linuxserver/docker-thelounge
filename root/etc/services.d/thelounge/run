@@ -1,0 +1,6 @@
+#!/usr/bin/with-contenv sh
+
+cd /app/node_modules/shout
+
+exec \
+	s6-setuidgid abc node index.js --home /config
