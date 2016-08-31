@@ -69,4 +69,4 @@ To log in to the application, browse to https://<hostip>:9000.
 * To monitor the logs of the container in realtime: `docker logs -f thelounge`
 
 ## Versions
-+ **31.08.16:** Rebase to alpine linux, move to lsiocommunity
++ **31.08.16:** Initial Release.
