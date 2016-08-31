@@ -10,9 +10,9 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [IRC][ircurl] on freenode at `#linuxserver.io`
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
-# lsiocommunity/shout-irc
-[![Docker Pulls](https://img.shields.io/docker/pulls/lsiocommunity/shout-irc.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsiocommunity/shout-irc.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/Community/lsiocommunity-shout-irc)](http://jenkins.linuxserver.io:8080/job/Dockers/job/Community/job/lsiocommunity-shout-irc/)
-[hub]: https://hub.docker.com/r/lsiocommunity/shout-irc/
+# linuxserver/thelounge
+[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/thelounge.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/thelounge.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/Community/lsiocommunity-shout-irc)](http://jenkins.linuxserver.io:8080/job/Dockers/job/Community/job/lsiocommunity-shout-irc/)
+[hub]: https://hub.docker.com/r/linuxserver/thelounge/
 
 shoutIRC is a web IRC client that you host on your own server.
 
@@ -35,7 +35,7 @@ docker create \
   -e PGID=<gid> -e PUID=<uid>  \
   -e TZ=<timezone> \
   -p 9000:9000 \
-  lsiocommunity/shout-irc
+  linuxserver/thelounge
 ```
 
 **Parameters**
