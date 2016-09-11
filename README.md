@@ -11,7 +11,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # linuxserver/thelounge
-[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/thelounge.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/thelounge.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-thelounge)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-thelounge/)
+[![](https://images.microbadger.com/badges/image/linuxserver/thelounge.svg)](http://microbadger.com/images/linuxserver/thelounge "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/thelounge.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/thelounge.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-thelounge)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-thelounge/)
 [hub]: https://hub.docker.com/r/linuxserver/thelounge/
 
 TheLounge (a fork of shoutIRC) is a web IRC client that you host on your own server.
@@ -69,4 +69,6 @@ To log in to the application, browse to https://<hostip>:9000.
 * To monitor the logs of the container in realtime: `docker logs -f thelounge`
 
 ## Versions
+
++ **11.09.16:** Add layer badges to README.
 + **31.08.16:** Initial Release.
