@@ -63,6 +63,18 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 To log in to the application, browse to https://<hostip>:9000.
 
+To setup user account(s)
+
++ edit /config/config.json changing the value `public: true,` to `public: false,`  restart the container and enter the following from the command line of the host.
+
++ `docker exec -it thelounge node /app/node_modules/thelounge/index.js --home /config add <user>`
+
++ Enter a password when prompted, refresh your browser.
+
++ You should now be prompted for a password on the webinterface.
+
+
+ 
 ## Info
 
 * Shell access whilst the container is running: `docker exec -it thelounge /bin/bash`
