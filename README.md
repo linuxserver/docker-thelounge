@@ -69,7 +69,7 @@ To setup user account(s)
 
 + `docker exec -it thelounge node /app/node_modules/thelounge/index.js --home /config add <user>`
 
-+ Enter a password when prompted, restart the container once again.
++ Enter a password when prompted, refresh your browser.
 
 + You should now be prompted for a password on the webinterface.
 
