@@ -65,11 +65,11 @@ To log in to the application, browse to https://<hostip>:9000.
 
 To setup user account(s)
 
-+ edit /config/config.json changing the value `public: true,` to false, restart the container and enter the following
++ edit /config/config.json changing the value `public: true,` to `public: false,`  restart the container and enter the following
 
 + `docker exec -it thelounge node /app/node_modules/thelounge/index.js --home /config add <user>`
 
-+ Enter a password when prompted, restart the container 
++ Enter a password when prompted, restart the container once again.
 
 + You should now be prompted for a password on the webinterface.
 
