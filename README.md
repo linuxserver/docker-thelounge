@@ -91,6 +91,7 @@ To setup user account(s)
 
 ## Versions
 
-+ **14-10-16:** Add version layer information.
++ **14.10.16:** Bump to pickup 2.10 release.
++ **14.10.16:** Add version layer information.
 + **11.09.16:** Add layer badges to README.
 + **31.08.16:** Initial Release.
