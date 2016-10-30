@@ -1,6 +1,6 @@
-#!/usr/bin/with-contenv sh
+#!/usr/bin/with-contenv bash
 
-cd /app/node_modules/thelounge
+cd /app/node_modules/thelounge || exit
 
 exec \
 	s6-setuidgid abc node index.js --home /config
