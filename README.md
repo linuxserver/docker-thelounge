@@ -2,6 +2,8 @@
 [forumurl]: https://forum.linuxserver.io
 [ircurl]: https://www.linuxserver.io/irc/
 [podcasturl]: https://www.linuxserver.io/podcast/
+[appurl]: https://thelounge.github.io/
+[hub]: https://hub.docker.com/r/linuxserver/thelounge/
 
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
 
@@ -12,7 +14,6 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 
 # linuxserver/thelounge
 [![](https://images.microbadger.com/badges/version/linuxserver/thelounge.svg)](https://microbadger.com/images/linuxserver/thelounge "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/linuxserver/thelounge.svg)](http://microbadger.com/images/linuxserver/thelounge "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/thelounge.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/thelounge.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-thelounge)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-thelounge/)
-[hub]: https://hub.docker.com/r/linuxserver/thelounge/
 
 TheLounge (a fork of shoutIRC) is a web IRC client that you host on your own server.
 
@@ -23,8 +24,7 @@ __What features does it have?__
 - Responsive layout — works well on your smartphone
 - _.. and more!_
 
-[![theloungeirc](https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/shout-icon.png)][theloungeurl]
-[theloungeurl]: https://thelounge.github.io/
+[![theloungeirc](https://raw.githubusercontent.com/linuxserver/community-templates/master/lsiocommunity/img/shout-icon.png)][appurl]
 
 ## Usage
 
