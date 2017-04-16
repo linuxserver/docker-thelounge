@@ -2,5 +2,11 @@
 
 cd /app/node_modules/thelounge || exit
 
-exec \
-	s6-setuidgid abc node index.js --home /config start
+if [ $USERS == Y ] || [ $USERS == y ] || [ $USERS == Yes ] || [ $USERS == yes ] || [ $USERS == YES ]
+then
+	exec \
+		s6-setuidgid abc node index.js --private --home /config start
+else
+	exec \
+		s6-setuidgid abc node index.js --home /config start
+fi
