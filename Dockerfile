@@ -9,10 +9,14 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 # environment settings
 ENV NPM_CONFIG_LOGLEVEL info
 
-# install packages
+# install build packages
 RUN \
- apk add --no-cache \
+ apk add --no-cache --virtual=build-dependencies \
 	nodejs-npm && \
+
+# install runtime packages
+ apk add --no-cache \
+	nodejs && \
 
 # install shout-irc
  mkdir -p \
@@ -22,7 +26,12 @@ RUN \
 	thelounge && \
 
 # cleanup
- npm cache clean
+ apk del --purge \
+	build-dependencies && \
+ rm -rf \
+	/root && \
+ mkdir -p / \
+	/root
 
 # copy local files
 COPY root/ /
