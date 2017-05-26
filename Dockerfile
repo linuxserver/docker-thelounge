@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:3.5
+FROM lsiobase/alpine:3.6
 MAINTAINER Gonzalo Peci, sparklyballs
 
 # set version label
@@ -12,7 +12,7 @@ ENV NPM_CONFIG_LOGLEVEL info
 # install packages
 RUN \
  apk add --no-cache \
-	nodejs && \
+	nodejs-npm && \
 
 # install shout-irc
  mkdir -p \
