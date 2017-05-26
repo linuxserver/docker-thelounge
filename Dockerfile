@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:3.5
+FROM lsiobase/alpine:3.6
 MAINTAINER Gonzalo Peci, sparklyballs
 
 # set version label
@@ -9,8 +9,12 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 # environment settings
 ENV NPM_CONFIG_LOGLEVEL info
 
-# install packages
+# install build packages
 RUN \
+ apk add --no-cache --virtual=build-dependencies \
+	nodejs-npm && \
+
+# install runtime packages
  apk add --no-cache \
 	nodejs && \
 
@@ -22,7 +26,12 @@ RUN \
 	thelounge && \
 
 # cleanup
- npm cache clean
+ apk del --purge \
+	build-dependencies && \
+ rm -rf \
+	/root && \
+ mkdir -p / \
+	/root
 
 # copy local files
 COPY root/ /
