@@ -34,6 +34,7 @@ docker create \
   -v <path to data>:/config \
   -e PGID=<gid> -e PUID=<uid>  \
   -e TZ=<timezone> \
+  -e USERS=no \
   -p 9000:9000 \
   linuxserver/thelounge
 ```
@@ -51,6 +52,7 @@ http://192.168.x.x:8080 would show you what's running INSIDE the container on po
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 * `-e TZ` for timezone information, eg Europe/London
+* `-e USERS` set to yes to enable user accounts (See [Set up user accounts](#add-user-accounts))
 
 It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it thelounge /bin/bash`.
 
@@ -69,15 +71,15 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 To log in to the application, browse to https://<hostip>:9000.
 
-To setup user account(s)
+### Add user accounts
 
-+ edit /config/config.json changing the value `public: true,` to `public: false,`  restart the container and enter the following from the command line of the host.
+If you want to add user accounts you must create the container with the `-e USERS` set to yes. See [Usage](#usage).
 
-+ `docker exec -it thelounge node /app/node_modules/thelounge/index.js --home /config add <user>`
+`docker exec -it thelounge node /app/node_modules/thelounge/index.js --home /config add <user>`
 
-+ Enter a password when prompted, refresh your browser.
+You will be asked to type a password. You can add more users by running the command again with a new username. Then reboot your container using `docker restart shout`
 
-+ You should now be prompted for a password on the webinterface.
+You should now be prompted for a password on the webinterface.
 
 
  
