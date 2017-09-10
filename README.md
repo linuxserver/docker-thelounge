@@ -47,7 +47,7 @@ http://192.168.x.x:8080 would show you what's running INSIDE the container on po
 
 
 * `-p 9000` - the port(s)
-* `-v /config` -
+* `-v /config` - the configuration folder
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 * `-e TZ` for timezone information, eg Europe/London
@@ -73,14 +73,29 @@ To setup user account(s)
 
 + edit /config/config.json changing the value `public: true,` to `public: false,`  restart the container and enter the following from the command line of the host.
 
-+ `docker exec -it thelounge node /app/node_modules/thelounge/index.js --home /config add <user>`
+ + you can run `docker exec -it thelounge node lounge config` to edit in `vi` or `docker exec -it thelounge sed -i '' 's/\(public: \)true/\1false/g' /config/config.js` to change it automatically.
+
++ `docker exec -it thelounge node lounge add <user>`
 
 + Enter a password when prompted, refresh your browser.
 
 + You should now be prompted for a password on the webinterface.
 
+## Changing settings
 
- 
+To further change settings, run `docker exec -it thelounge node lounge <command>` where the command is one of the following: 
+
+```
+    config            Edit configuration file located at /config/config.js.
+    list              List all users
+    add <name>        Add a new user
+    remove <name>     Remove an existing user
+    reset <name>      Reset user password
+    edit <name>       Edit user file located at /config/users/<name>.json.
+```
+
+Commands which edit configuration files use the `vi` text editor.
+
 ## Info
 
 * Shell access whilst the container is running: `docker exec -it thelounge /bin/bash`
