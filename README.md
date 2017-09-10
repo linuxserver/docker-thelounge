@@ -71,15 +71,15 @@ To log in to the application, browse to https://<hostip>:9000.
 
 To setup user account(s)
 
-+ edit /config/config.json changing the value `public: true,` to `public: false,`  restart the container and enter the following from the command line of the host.
-
- + you can run `docker exec -it thelounge node lounge config` to edit in `vi` or `docker exec -it thelounge sed -i '' 's/\(public: \)true/\1false/g' /config/config.js` to change it automatically.
++ Edit /config/config.json changing the value `public: true,` to `public: false,`<sup>[†](#addendum)</sup> restart the container and enter the following from the command line of the host.
 
 + `docker exec -it thelounge node lounge add <user>`
 
 + Enter a password when prompted, refresh your browser.
 
 + You should now be prompted for a password on the webinterface.
+
+<a name="addendum">†</a>: You can run `docker exec -it thelounge node lounge config` to edit in `vi` or `docker exec -it thelounge sed -i '' 's/\(public: \)true/\1false/g' /config/config.js` to change it automatically.
 
 ## Changing settings
 
