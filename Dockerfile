@@ -23,6 +23,8 @@ RUN \
  cd /app && \
  npm install \
 	thelounge && \
+ echo "**** fix wrong default for public setting ****" && \
+ sed -i "s#public: false#public: true#g" /app/node_modules/thelounge/defaults/config.js && \
  echo "**** cleanup ****" && \
  apk del --purge \
 	build-dependencies && \
