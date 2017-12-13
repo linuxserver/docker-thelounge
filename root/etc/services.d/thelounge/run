@@ -3,4 +3,4 @@
 cd /app/node_modules/thelounge || exit
 
 exec \
-	s6-setuidgid abc node index.js --home /config start
+	s6-setuidgid abc node index.js start

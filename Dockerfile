@@ -1,31 +1,31 @@
-FROM lsiobase/alpine:3.6
-MAINTAINER Gonzalo Peci, sparklyballs
+FROM lsiobase/alpine:3.7
 
 # set version label
 ARG BUILD_DATE
 ARG VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
+LABEL maintainer="sparklyballs"
 
 # environment settings
-ENV NPM_CONFIG_LOGLEVEL info
+ENV LOUNGE_HOME="/config" \
+NPM_CONFIG_LOGLEVEL="info"
 
-# install build packages
 RUN \
+ echo "**** install build packages ****" && \
  apk add --no-cache --virtual=build-dependencies \
 	nodejs-npm && \
-
-# install runtime packages
+ echo "**** install runtime packages ****" && \
  apk add --no-cache \
 	nodejs && \
-
-# install shout-irc
+ echo "**** install the-lounge ****" && \
  mkdir -p \
 	/app && \
  cd /app && \
  npm install \
 	thelounge && \
-
-# cleanup
+ echo "**** fix wrong default for public setting ****" && \
+ sed -i "s#public: false#public: true#g" /app/node_modules/thelounge/defaults/config.js && \
+ echo "**** cleanup ****" && \
  apk del --purge \
 	build-dependencies && \
  rm -rf \
