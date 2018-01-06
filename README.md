@@ -97,6 +97,7 @@ To setup user account(s)
 
 ## Versions
 
++ **06.01.18:** Rebase to alpine 3.7.
 + **26.05.17:** Rebase to alpine 3.6.
 + **06.02.17:** Rebase to alpine 3.5.
 + **14.10.16:** Bump to pickup 2.10 release.
