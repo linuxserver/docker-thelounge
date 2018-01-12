@@ -11,12 +11,9 @@ ENV LOUNGE_HOME="/config" \
 NPM_CONFIG_LOGLEVEL="info"
 
 RUN \
- echo "**** install build packages ****" && \
- apk add --no-cache --virtual=build-dependencies \
-	nodejs-npm && \
  echo "**** install runtime packages ****" && \
  apk add --no-cache \
-	nodejs && \
+	nodejs nodejs-npm && \
  echo "**** install shout-irc ****" && \
  mkdir -p \
 	/app && \
@@ -26,8 +23,6 @@ RUN \
  echo "**** ensure public true on startup aka no users ****" && \
  sed -i "s/public: false,/public: true,/g" /app/node_modules/thelounge/defaults/config.js && \
  echo "**** cleanup ****" && \
- apk del --purge \
-	build-dependencies && \
  rm -rf \
 	/root && \
  mkdir -p / \
