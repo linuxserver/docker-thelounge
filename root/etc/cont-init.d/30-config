@@ -3,3 +3,6 @@
 # permissions
 chown -R abc:abc \
 	/config
+# logs
+mkdir -p /var/log/thelounge
+chown -R nobody:nobody /var/log/thelounge
