@@ -14,14 +14,15 @@ RUN \
  echo "**** install runtime packages ****" && \
  apk add --no-cache \
 	nodejs-npm && \
- echo "**** install shout-irc ****" && \
+ npm config set unsafe-perm true && \
+ echo "**** install the lounge irc ****" && \
  mkdir -p \
 	/app && \
  cd /app && \
- npm install \
+ npm install -g \
 	thelounge && \
  echo "**** ensure public true on startup aka no users ****" && \
- sed -i "s/public: false,/public: true,/g" /app/node_modules/thelounge/defaults/config.js && \
+ sed -i "s/public: false,/public: true,/g" /usr/lib/node_modules/thelounge/defaults/config.js && \
  echo "**** cleanup ****" && \
  rm -rf \
 	/root && \
