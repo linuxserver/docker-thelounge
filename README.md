@@ -73,7 +73,7 @@ To setup user account(s)
 
 + edit /config/config.json changing the value `public: true,` to `public: false,`  restart the container and enter the following from the command line of the host.
 
-+ `docker exec -it thelounge node /app/node_modules/thelounge/index.js --home /config add <user>`
++ `docker exec -it thelounge thelounge add <user>`
 
 + Enter a password when prompted, refresh your browser.
 
@@ -97,6 +97,7 @@ To setup user account(s)
 
 ## Versions
 
++ **25.08.18:** Use global install, simplifies adding users.
 + **20.08.18:** Rebase to alpine 3.8.
 + **06.01.18:** Rebase to alpine 3.7.
 + **26.05.17:** Rebase to alpine 3.6.
