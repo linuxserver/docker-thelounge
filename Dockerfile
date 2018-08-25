@@ -34,3 +34,7 @@ COPY root/ /
 # ports and volumes
 EXPOSE 9000
 VOLUME /config
+
+# environment variables
+ENV PATH="/app/node_modules/.bin:$PATH"
+ENV LOUNGE_HOME="/config"
