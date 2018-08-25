@@ -14,6 +14,7 @@ RUN \
  echo "**** install runtime packages ****" && \
  apk add --no-cache \
 	nodejs-npm && \
+ npm config set unsafe-perm true && \
  echo "**** install the lounge irc ****" && \
  mkdir -p \
 	/app && \
