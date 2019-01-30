@@ -1,0 +1,27 @@
+---
+
+# jenkins variables
+project_name: docker-thelounge
+external_type: npm_version
+release_type: stable
+release_tag: latest
+ls_branch: master
+repo_vars:
+  - BUILD_VERSION_ARG = 'THELOUNGE_VERSION'
+  - EXT_NPM='thelounge'
+  - LS_USER = 'linuxserver'
+  - LS_REPO = 'docker-thelounge'
+  - CONTAINER_NAME = 'thelounge'
+  - DOCKERHUB_IMAGE = 'linuxserver/thelounge'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/thelounge'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/thelounge'
+  - DIST_IMAGE = 'alpine'
+  - MULTIARCH='true'
+  - CI='true'
+  - CI_WEB='true'
+  - CI_PORT='9000'
+  - CI_SSL='false'
+  - CI_DELAY='120'
+  - CI_DOCKERENV='TZ=US/Pacific'
+  - CI_AUTH='user:password'
+  - CI_WEBPATH=''
