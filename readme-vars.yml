@@ -4,7 +4,7 @@
 project_name: thelounge
 project_url: "https://thelounge.github.io/"
 project_logo: "https://raw.githubusercontent.com/thelounge/thelounge/master/client/img/logo-vertical-transparent-bg.svg?sanitize=true"
-project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) short description goes here."
+project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) (a fork of shoutIRC) is a web IRC client that you host on your own server."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
 
 # supported architectures
