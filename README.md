@@ -158,6 +158,7 @@ Below are the instructions for updating containers:
 
 ## Versions
 
+* **22.02.19:** - Rebasing to alpine 3.9.
 * **28.01.19:** - Add pipeline logic and multi arch.
 * **25.08.18:** - Use global install, simplifies adding users.
 * **20.08.18:** - Rebase to alpine 3.8.
