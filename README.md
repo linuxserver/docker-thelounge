@@ -182,6 +182,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 ## Versions
 
 * **15.05.19:** - Update Arm variant images to build sqlite3 module.
+* **23.03.19:** - Switching to new Base images, shift to arm32v7 tag.
 * **22.02.19:** - Rebasing to alpine 3.9.
 * **28.01.19:** - Add pipeline logic and multi arch.
 * **25.08.18:** - Use global install, simplifies adding users.

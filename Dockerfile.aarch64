@@ -12,7 +12,7 @@ ENV THELOUNGE_HOME="/config" \
 NPM_CONFIG_LOGLEVEL="info"
 
 RUN \
- echo "**** install runtime packages ****" && \
+ echo "**** install build packages ****" && \
  apk add --no-cache --virtual=build-dependencies \
 	gcc \
 	g++ \

@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:arm64v8-3.9
+FROM lsiobase/alpine:arm32v7-3.9
 
 # set version label
 ARG BUILD_DATE
@@ -12,7 +12,7 @@ ENV THELOUNGE_HOME="/config" \
 NPM_CONFIG_LOGLEVEL="info"
 
 RUN \
- echo "**** install runtime packages ****" && \
+ echo "**** install build packages ****" && \
  apk add --no-cache --virtual=build-dependencies \
 	gcc \
 	g++ \
