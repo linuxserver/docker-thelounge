@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:arm32v7-3.9
+FROM lsiobase/alpine:arm64v8-3.9
 
 # set version label
 ARG BUILD_DATE
@@ -12,6 +12,12 @@ ENV THELOUNGE_HOME="/config" \
 NPM_CONFIG_LOGLEVEL="info"
 
 RUN \
+ echo "**** install runtime packages ****" && \
+ apk add --no-cache --virtual=build-dependencies \
+	gcc \
+	g++ \
+	make \
+	python-dev && \
  echo "**** install runtime packages ****" && \
  apk add --no-cache \
 	curl \
@@ -27,10 +33,13 @@ RUN \
 	/app && \
  cd /app && \
  npm install -g \
-	thelounge@${THELOUNGE_VERSION} && \
+	thelounge@${THELOUNGE_VERSION} \
+	sqlite3 && \
  echo "**** ensure public true on startup aka no users ****" && \
  sed -i "s/public: false,/public: true,/g" /usr/lib/node_modules/thelounge/defaults/config.js && \
  echo "**** cleanup ****" && \
+ apk del --purge \
+	build-dependencies && \
  rm -rf \
 	/root && \
  mkdir -p / \
