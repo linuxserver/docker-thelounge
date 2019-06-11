@@ -20,7 +20,7 @@ RUN \
  npm config set unsafe-perm true && \
  echo "**** install the lounge irc ****" && \
  if [ -z ${THELOUNGE_VERSION+x} ]; then \
-	THELOUNGE_VERSION=$(curl -sL https://skimdb.npmjs.com/registry/thelounge \
+	THELOUNGE_VERSION=$(curl -sL https://replicate.npmjs.com/registry/thelounge \
 	|jq -r '. | .["dist-tags"].latest'); \
  fi && \
  mkdir -p \
