@@ -105,7 +105,7 @@ pipeline {
       steps{
         script{
           env.EXT_RELEASE = sh(
-            script: '''curl -sL https://skimdb.npmjs.com/registry/${EXT_NPM} |jq -r '. | .["dist-tags"].latest' ''',
+            script: '''curl -sL https://replicate.npmjs.com/registry/${EXT_NPM} |jq -r '. | .["dist-tags"].latest' ''',
             returnStdout: true).trim()
           env.RELEASE_LINK = 'https://www.npmjs.com/package/' + env.EXT_NPM
         }
