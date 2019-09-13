@@ -13,10 +13,10 @@ jq-1.6-r0
 libacl-2.2.52-r6
 libattr-2.4.48-r0
 libc-utils-0.7.1-r0
-libcrypto1.1-1.1.1c-r0
+libcrypto1.1-1.1.1d-r0
 libcurl-7.65.1-r0
 libgcc-8.3.0-r0
-libssl1.1-1.1.1c-r0
+libssl1.1-1.1.1d-r0
 libstdc++-8.3.0-r0
 libtls-standalone-2.9.1-r0
 libuv-1.29.1-r0
