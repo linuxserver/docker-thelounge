@@ -7,14 +7,14 @@ c-ares-1.15.0-r0
 ca-certificates-20190108-r0
 ca-certificates-cacert-20190108-r0
 coreutils-8.31-r0
-curl-7.65.1-r0
+curl-7.66.0-r0
 http-parser-2.9.2-r0
 jq-1.6-r0
 libacl-2.2.52-r6
 libattr-2.4.48-r0
 libc-utils-0.7.1-r0
 libcrypto1.1-1.1.1d-r0
-libcurl-7.65.1-r0
+libcurl-7.66.0-r0
 libgcc-8.3.0-r0
 libssl1.1-1.1.1d-r0
 libstdc++-8.3.0-r0
