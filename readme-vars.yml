@@ -30,7 +30,6 @@ param_ports:
 app_setup_block_enabled: true
 app_setup_block: "
 * When the application first runs, it will populate its /config
-  * (be sure you have user permissions matched between the host and the container by using PUID and PGID)
   
 * Stop the container
 
@@ -50,7 +49,7 @@ app_setup_block: "
   
   * Saving logs to disk is the default, this consumes more space but allows scrollback.
 
-* To log in to the application, browse to http://<hostip>:9000
+* To log in to the application, browse to `http://<hostip>:9000`
 
 * You should now be prompted for a username and password on the webinterface.
 
