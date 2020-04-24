@@ -29,19 +29,31 @@ param_ports:
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: "
-* To log in to the application, browse to https://<hostip>:9000.
+* When the application first runs, it will populate its /config
+  
+* Stop the container
 
-* To setup user account(s) edit `/config/config.json` 
+* Now from the host, edit `/config/config.js`, wherever you've mapped it
   
-* Change the value `public: true,` to `public: false,`
- 
-* restart the container and enter the following from the command line of the host:
+  * In most cases you want the value `public: false` to allow named users only
   
-* `docker exec -it thelounge thelounge add <user>`
-  
-* Enter a password when prompted, refresh your browser.
+  * Setting the two prefetch values to true improves usability, but uses more storage
 
-* You should now be prompted for a password on the webinterface.
+* Once you have the configuration you want, save it and start the container again
+
+* For each user, run the command
+
+  * `docker exec -it thelounge s6-setuidgid abc thelounge add <user>`
+  
+  * You will be prompted to enter a password that will not be echoed.
+  
+  * Saving logs to disk is the default, this consumes more space but allows scrollback.
+
+* To log in to the application, browse to `http://<hostip>:9000`
+
+* You should now be prompted for a username and password on the webinterface.
+
+* Once logged in, you can add an IRC network. Some defaults are preset for Freenode.
 "
 
 # changelog
