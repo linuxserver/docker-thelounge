@@ -5,7 +5,7 @@ ARG BUILD_DATE
 ARG VERSION
 ARG THELOUNGE_VERSION
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
-LABEL maintainer="sparklyballs"
+LABEL maintainer="aptalca"
 
 # environment settings
 ENV THELOUNGE_HOME="/config" \
