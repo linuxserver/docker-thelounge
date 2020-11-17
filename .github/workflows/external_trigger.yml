@@ -17,27 +17,8 @@ jobs:
             exit 0
           fi
           echo "External trigger running off of master branch. To disable this trigger, set a Github secret named \"PAUSE_EXTERNAL_TRIGGER_THELOUNGE_MASTER\"."
-          echo "Setting env vars"
-          BUILD_VERSION_ARG='THELOUNGE_VERSION'
-          EXT_NPM='thelounge'
-          LS_USER='linuxserver'
-          LS_REPO='docker-thelounge'
-          CONTAINER_NAME='thelounge'
-          DOCKERHUB_IMAGE='linuxserver/thelounge'
-          DEV_DOCKERHUB_IMAGE='lsiodev/thelounge'
-          PR_DOCKERHUB_IMAGE='lspipepr/thelounge'
-          DIST_IMAGE='alpine'
-          MULTIARCH='true'
-          CI='true'
-          CI_WEB='true'
-          CI_PORT='9000'
-          CI_SSL='false'
-          CI_DELAY='120'
-          CI_DOCKERENV='TZ=US/Pacific'
-          CI_AUTH='user:password'
-          CI_WEBPATH=''
           echo "Retrieving external version"
-          EXT_RELEASE=$(curl -sL "https://replicate.npmjs.com/registry/${EXT_NPM}" |jq -r '. | .["dist-tags"].latest')
+          EXT_RELEASE=$(curl -sL "https://replicate.npmjs.com/registry/thelounge" |jq -r '. | .["dist-tags"].latest')
           if [ -z "${EXT_RELEASE}" ]; then
             echo "Can't retrieve external version, exiting"
             FAILURE_REASON="Can't retrieve external version for thelounge branch master"
@@ -48,19 +29,24 @@ jobs:
           fi
           echo "External version: ${EXT_RELEASE}"
           echo "Retrieving last pushed version"
-          image="${LS_USER}/thelounge"
+          image="linuxserver/thelounge"
           tag="latest"
-          token=$(curl -s \
-            "https://auth.docker.io/token?scope=repository:${image}:pull&service=registry.docker.io" \
+          token=$(curl -sX GET \
+            "https://ghcr.io/token?scope=repository%3Alinuxserver%2Fthelounge%3Apull" \
             | jq -r '.token')
-          digest=$(curl -s \
-            --header "Accept: application/vnd.docker.distribution.manifest.v2+json" \
-            --header "Authorization: Bearer ${token}" \
-            "https://registry-1.docker.io/v2/${image}/manifests/${tag}" \
-            | jq -r '.config.digest')
+            multidigest=$(curl -s \
+              --header "Accept: application/vnd.docker.distribution.manifest.v2+json" \
+              --header "Authorization: Bearer ${token}" \
+              "https://ghcr.io/v2/${image}/manifests/${tag}" \
+              | jq -r 'first(.manifests[].digest)')
+            digest=$(curl -s \
+              --header "Accept: application/vnd.docker.distribution.manifest.v2+json" \
+              --header "Authorization: Bearer ${token}" \
+              "https://ghcr.io/v2/${image}/manifests/${multidigest}" \
+              | jq -r '.config.digest')
           image_info=$(curl -sL \
             --header "Authorization: Bearer ${token}" \
-            "https://registry-1.docker.io/v2/${image}/blobs/${digest}" \
+            "https://ghcr.io/v2/${image}/blobs/${digest}" \
             | jq -r '.container_config')
           IMAGE_RELEASE=$(echo ${image_info} | jq -r '.Labels.build_version' | awk '{print $3}')
           IMAGE_VERSION=$(echo ${IMAGE_RELEASE} | awk -F'-ls' '{print $1}')
