@@ -18,13 +18,14 @@ RUN \
 		git \
 		g++ \
 		make \
-		nodejs-npm \
 		python2-dev && \
 	echo "**** install runtime packages ****" && \
 	apk add --no-cache \
 		curl \
 		jq \
+		nodejs-npm \
 		yarn && \
+	npm config set unsafe-perm true && \
 	echo "**** install the lounge irc ****" && \
 	if [ -z ${THELOUNGE_COMMIT+x} ]; then \
 		THELOUNGE_COMMIT=$(curl -s https://api.github.com/repos/thelounge/thelounge/commits/master \
