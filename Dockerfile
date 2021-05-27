@@ -18,6 +18,7 @@ RUN \
 		git \
 		g++ \
 		make \
+		nodejs-npm \
 		python2-dev && \
 	echo "**** install runtime packages ****" && \
 	apk add --no-cache \
@@ -38,6 +39,10 @@ RUN \
 		/tmp/thelounge.tar.gz -C \
         /app/thelounge --strip-components=1 && \
 	cd /app/thelounge && \
+	npm install -g \
+		libvips \
+		node-gyp \
+		sqlite3 && \
 	yarn install && \
 	NODE_ENV=production yarn build && \
 	yarn cache clean && \
