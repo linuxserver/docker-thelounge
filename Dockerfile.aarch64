@@ -27,7 +27,7 @@ RUN \
 	echo "**** install the lounge irc ****" && \
 	if [ -z ${THELOUNGE_VERSION+x} ]; then \
 		THELOUNGE_VERSION=$(curl -sL https://replicate.npmjs.com/registry/thelounge \
-		|jq -r '. | .["dist-tags"].latest'); \
+		|jq -r '. | .["dist-tags"].next'); \
 	fi && \
 	mkdir -p \
 		/app && \

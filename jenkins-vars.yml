@@ -2,13 +2,14 @@
 
 # jenkins variables
 project_name: docker-thelounge
-external_type: npm_version
-release_type: stable
-release_tag: latest
-ls_branch: master
+external_type: custom_json
+release_type: prerelease
+release_tag: next
+ls_branch: next
 repo_vars:
+  - JSON_URL = 'https://replicate.npmjs.com/registry/thelounge'
+  - JSON_PATH = '.["dist-tags"].next'
   - BUILD_VERSION_ARG = 'THELOUNGE_VERSION'
-  - EXT_NPM='thelounge'
   - LS_USER = 'linuxserver'
   - LS_REPO = 'docker-thelounge'
   - CONTAINER_NAME = 'thelounge'
