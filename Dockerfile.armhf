@@ -26,6 +26,7 @@ RUN \
 		nodejs-npm \
 		yarn && \
 	npm config set unsafe-perm true && \
+	yarn config set unsafe-perm true && \
 	echo "**** install the lounge irc ****" && \
 	if [ -z ${THELOUNGE_COMMIT+x} ]; then \
 		THELOUNGE_COMMIT=$(curl -s https://api.github.com/repos/thelounge/thelounge/commits/master \
