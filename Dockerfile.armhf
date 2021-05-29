@@ -14,18 +14,18 @@ NPM_CONFIG_LOGLEVEL="info"
 RUN \
 	echo "**** install build packages ****" && \
 	apk add --no-cache --virtual=build-dependencies \
+		expat \
+		g++ \
 		gcc \
 		git \
-		g++ \
+		glib-dev \
 		make \
 		python2-dev && \
 	echo "**** install runtime packages ****" && \
 	apk add --no-cache \
 		curl \
 		jq \
-		nodejs-npm \
 		yarn && \
-	npm config set unsafe-perm true && \
 	yarn config set unsafe-perm true && \
 	echo "**** install the lounge irc ****" && \
 	if [ -z ${THELOUNGE_COMMIT+x} ]; then \
@@ -41,9 +41,6 @@ RUN \
 		/tmp/thelounge.tar.gz -C \
         /app/thelounge --strip-components=1 && \
 	cd /app/thelounge && \
-	npm install -g \
-		node-gyp \
-		sqlite3 && \
 	yarn install && \
 	NODE_ENV=production yarn build && \
 	yarn cache clean && \
