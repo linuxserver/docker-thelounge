@@ -42,6 +42,7 @@ RUN \
         /app/thelounge --strip-components=1 && \
 	cd /app/thelounge && \
 	npm install -g \
+		node-gyp \
 		sqlite3 && \
 	yarn install && \
 	NODE_ENV=production yarn build && \
