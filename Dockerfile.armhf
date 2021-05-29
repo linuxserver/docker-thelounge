@@ -44,6 +44,7 @@ RUN \
 	cd /app/thelounge && \
 	yarn global add \
 		node-gyp \
+		sharp \
 		sqlite3 && \
 	yarn install && \
 	NODE_ENV=production yarn build && \
