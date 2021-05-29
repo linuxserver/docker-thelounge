@@ -20,7 +20,8 @@ RUN \
 		git \
 		glib-dev \
 		make \
-		python2-dev && \
+		python2-dev \
+		vips-dev && \
 	echo "**** install runtime packages ****" && \
 	apk add --no-cache \
 		curl \
@@ -41,6 +42,9 @@ RUN \
 		/tmp/thelounge.tar.gz -C \
         /app/thelounge --strip-components=1 && \
 	cd /app/thelounge && \
+	yarn global add \
+		node-gyp \
+		sqlite3 && \
 	yarn install && \
 	NODE_ENV=production yarn build && \
 	yarn cache clean && \
