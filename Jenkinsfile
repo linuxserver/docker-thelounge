@@ -26,7 +26,7 @@ pipeline {
     DOCKERHUB_IMAGE = 'linuxserver/thelounge'
     DEV_DOCKERHUB_IMAGE = 'lsiodev/thelounge'
     PR_DOCKERHUB_IMAGE = 'lspipepr/thelounge'
-    DIST_IMAGE = 'alpine'
+    DIST_IMAGE = 'ubuntu'
     MULTIARCH='true'
     CI='true'
     CI_WEB='true'
