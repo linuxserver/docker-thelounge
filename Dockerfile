@@ -19,7 +19,8 @@ RUN \
 	apt-get -y install --no-install-recommends \
 		build-essential \
 		git \
-		python2-dev && \
+		python \
+		python-dev && \
 	echo "**** install runtime packages ****" && \
 	apt-get -y install \
 		curl \
@@ -52,7 +53,9 @@ RUN \
 	echo "**** cleanup ****" && \
 	apt-get -y purge --auto-remove \
 		build-essential \
-		git && \
+		git \
+		python \
+		python-dev && \
 	apt-get -y autoremove && \
 	apt-get -y autoclean && \
 	rm -rf \
