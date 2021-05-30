@@ -18,7 +18,8 @@ RUN \
 	echo "**** install build packages ****" && \
 	apt-get -y install --no-install-recommends \
 		build-essential \
-		git && \
+		git \
+		python2-dev && \
 	echo "**** install runtime packages ****" && \
 	apt-get -y install \
 		curl \
