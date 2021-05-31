@@ -21,6 +21,8 @@ RUN \
 		git \
 		libsharp-dev \
 		libvips-dev \
+		nodejs \
+		npm \
 		python3 \
 		python3-dev && \
 	echo "**** install runtime packages ****" && \
@@ -58,6 +60,8 @@ RUN \
 		git \
 		libsharp-dev \
 		libvips-dev \
+		nodejs \
+		npm \
 		python3 \
 		python3-dev && \
 	apt-get -y autoremove && \
