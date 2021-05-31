@@ -19,8 +19,10 @@ RUN \
 	apt-get -y install --no-install-recommends \
 		build-essential \
 		git \
-		python \
-		python-dev && \
+		libsharp-dev \
+		libvips-dev \
+		python3 \
+		python3-dev && \
 	echo "**** install runtime packages ****" && \
 	apt-get -y install \
 		curl \
@@ -54,8 +56,10 @@ RUN \
 	apt-get -y purge --auto-remove \
 		build-essential \
 		git \
-		python \
-		python-dev && \
+		libsharp-dev \
+		libvips-dev \
+		python3 \
+		python3-dev && \
 	apt-get -y autoremove && \
 	apt-get -y autoclean && \
 	rm -rf \
