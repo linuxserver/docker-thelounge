@@ -1,4 +1,4 @@
 #!/usr/bin/with-contenv bash
 
 exec \
-	s6-setuidgid abc thelounge start
+    s6-setuidgid abc thelounge start

@@ -12,38 +12,38 @@ ENV THELOUNGE_HOME="/config" \
 NPM_CONFIG_LOGLEVEL="info"
 
 RUN \
-	echo "**** install build packages ****" && \
-	apk add --no-cache --virtual=build-dependencies \
-		gcc \
-		g++ \
-		make \
-		python2-dev && \
-	echo "**** install runtime packages ****" && \
-	apk add --no-cache \
-		curl \
-		jq \
-		nodejs-npm && \
-	npm config set unsafe-perm true && \
-	echo "**** install the lounge irc ****" && \
-	if [ -z ${THELOUNGE_VERSION+x} ]; then \
-		THELOUNGE_VERSION=$(curl -sL https://replicate.npmjs.com/registry/thelounge \
-		|jq -r '. | .["dist-tags"].next'); \
-	fi && \
-	mkdir -p \
-		/app && \
-	cd /app && \
-	npm install -g \
-		thelounge@${THELOUNGE_VERSION} \
-		sqlite3 && \
-	echo "**** ensure public true on startup aka no users ****" && \
-	sed -i "s/public: false,/public: true,/g" /usr/lib/node_modules/thelounge/defaults/config.js && \
-	echo "**** cleanup ****" && \
-	apk del --purge \
-		build-dependencies && \
-	rm -rf \
-		/root && \
-	mkdir -p / \
-		/root
+  echo "**** install build packages ****" && \
+  apk add --no-cache --virtual=build-dependencies \
+    gcc \
+    g++ \
+    make \
+    python2-dev && \
+  echo "**** install runtime packages ****" && \
+  apk add --no-cache \
+    curl \
+    jq \
+    nodejs-npm && \
+  npm config set unsafe-perm true && \
+  echo "**** install the lounge irc ****" && \
+  if [ -z ${THELOUNGE_VERSION+x} ]; then \
+    THELOUNGE_VERSION=$(curl -sL https://replicate.npmjs.com/registry/thelounge \
+    |jq -r '. | .["dist-tags"].next'); \
+  fi && \
+  mkdir -p \
+    /app && \
+  cd /app && \
+  npm install -g \
+    thelounge@${THELOUNGE_VERSION} \
+    sqlite3 && \
+  echo "**** ensure public true on startup aka no users ****" && \
+  sed -i "s/public: false,/public: true,/g" /usr/lib/node_modules/thelounge/defaults/config.js && \
+  echo "**** cleanup ****" && \
+  apk del --purge \
+    build-dependencies && \
+  rm -rf \
+    /root && \
+  mkdir -p / \
+    /root
 
 # copy local files
 COPY root/ /
