@@ -22,7 +22,8 @@ RUN \
   apk add --no-cache \
     curl \
     jq \
-    nodejs-npm && \
+    nodejs \
+    npm && \
   npm config set unsafe-perm true && \
   echo "**** install the lounge irc ****" && \
   if [ -z ${THELOUNGE_VERSION+x} ]; then \
