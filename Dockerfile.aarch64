@@ -17,7 +17,7 @@ RUN \
     gcc \
     g++ \
     make \
-    python2-dev && \
+    python3-dev && \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
     curl \
