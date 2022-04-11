@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-ubuntu:arm32v7-focal
+FROM ghcr.io/linuxserver/baseimage-alpine:arm32v7-3.15
 
 # set version label
 ARG BUILD_DATE
@@ -12,24 +12,22 @@ ENV THELOUNGE_HOME="/config" \
 NPM_CONFIG_LOGLEVEL="info"
 
 RUN \
-  curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
-  echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
-  apt-get -y update && \
   echo "**** install build packages ****" && \
-  apt-get -y install --no-install-recommends \
-    build-essential \
+  apk add --no-cache --virtual=build-dependencies \
+    g++ \
+    gcc \
     git \
-    libsharp-dev \
-    libvips-dev \
-    nodejs \
-    npm \
-    python3 \
-    python3-dev && \
+    make \
+    python3-dev \
+    vips-dev && \
   echo "**** install runtime packages ****" && \
-  apt-get -y install \
+  apk add --no-cache \
     curl \
     jq \
+    nodejs \
+    npm \
     yarn && \
+  npm config set unsafe-perm true && \
   yarn config set unsafe-perm true && \
   echo "**** install the lounge irc ****" && \
   if [ -z ${THELOUNGE_COMMIT+x} ]; then \
@@ -55,21 +53,9 @@ RUN \
   echo "**** ensure public true on startup aka no users ****" && \
   sed -i "s/public: false,/public: true,/g" defaults/config.js && \
   echo "**** cleanup ****" && \
-  apt-get -y purge --auto-remove \
-    build-essential \
-    git \
-    libsharp-dev \
-    libvips-dev \
-    nodejs \
-    npm \
-    python3 \
-    python3-dev && \
-  apt-get -y autoremove && \
-  apt-get -y autoclean && \
+  apk del --purge \
+    build-dependencies && \
   rm -rf \
-    /var/lib/apt/lists/* \
-    /var/tmp/* \
-    /tmp/* \
     /root && \
   mkdir -p / \
     /root
