@@ -14,9 +14,7 @@ NPM_CONFIG_LOGLEVEL="info"
 RUN \
   echo "**** install build packages ****" && \
   apk add --no-cache --virtual=build-dependencies \
-    gcc \
-    g++ \
-    make \
+    build-base \
     python3-dev && \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
@@ -28,7 +26,7 @@ RUN \
   echo "**** install the lounge irc ****" && \
   if [ -z ${THELOUNGE_VERSION+x} ]; then \
     THELOUNGE_VERSION=$(curl -sL https://replicate.npmjs.com/registry/thelounge \
-    |jq -r '. | .["dist-tags"].next'); \
+    | jq -r '. | .["dist-tags"].next'); \
   fi && \
   mkdir -p \
     /app && \
@@ -42,7 +40,8 @@ RUN \
   apk del --purge \
     build-dependencies && \
   rm -rf \
-    /root && \
+    /root \
+    /tmp/* && \
   mkdir -p / \
     /root
 
