@@ -55,7 +55,8 @@ RUN \
   apk del --purge \
     build-dependencies && \
   rm -rf \
-    /root && \
+    /root \
+    /tmp/* && \
   mkdir -p / \
     /root
 
