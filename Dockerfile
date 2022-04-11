@@ -14,12 +14,10 @@ NPM_CONFIG_LOGLEVEL="info"
 RUN \
   echo "**** install build packages ****" && \
   apk add --no-cache --virtual=build-dependencies \
-    g++ \
-    gcc \
+    build-base \
     git \
-    make \
     python3-dev && \
-  apk add --no-cache --virtual=build-dependencies --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
+  apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
     vips-dev && \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
