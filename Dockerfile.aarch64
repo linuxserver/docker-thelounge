@@ -42,7 +42,7 @@ RUN \
     /tmp/thelounge.tar.gz -C \
     /app/thelounge --strip-components=1 && \
   cd /app/thelounge && \
-  npm install -g \
+  npm install -g --build-from-source \
     node-gyp \
     sharp \
     sqlite3 && \
