@@ -2,13 +2,15 @@
 
 # jenkins variables
 project_name: docker-thelounge
-external_type: npm_version
-release_type: stable
-release_tag: latest
-ls_branch: master
+external_type: github_commit
+release_type: prerelease
+release_tag: nightly
+ls_branch: nightly
 repo_vars:
-  - BUILD_VERSION_ARG = 'THELOUNGE_VERSION'
-  - EXT_NPM='thelounge'
+  - EXT_GIT_BRANCH = 'master'
+  - EXT_USER = 'thelounge'
+  - EXT_REPO = 'thelounge'
+  - BUILD_VERSION_ARG = 'THELOUNGE_COMMIT'
   - LS_USER = 'linuxserver'
   - LS_REPO = 'docker-thelounge'
   - CONTAINER_NAME = 'thelounge'
