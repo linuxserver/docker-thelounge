@@ -18,7 +18,8 @@ RUN \
     gcc \
     git \
     make \
-    python3-dev \
+    python3-dev && \
+  apk add --no-cache --virtual=build-dependencies --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
     vips-dev && \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
