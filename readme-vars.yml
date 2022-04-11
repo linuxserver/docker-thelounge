@@ -28,20 +28,20 @@ param_ports:
 
 # application setup block
 app_setup_block_enabled: true
-app_setup_block: "
-* When the application first runs, it will populate its /config
+app_setup_block: |
+  * When the application first runs, it will populate its /config
   
-* Stop the container
+  * Stop the container
 
-* Now from the host, edit `/config/config.js`, wherever you've mapped it
-  
+  * Now from the host, edit `/config/config.js`, wherever you've mapped it
+
   * In most cases you want the value `public: false` to allow named users only
-  
+
   * Setting the two prefetch values to true improves usability, but uses more storage
 
-* Once you have the configuration you want, save it and start the container again
+  * Once you have the configuration you want, save it and start the container again
 
-* For each user, run the command
+  * For each user, run the command
 
   * `docker exec -it thelounge s6-setuidgid abc thelounge add <user>`
   
@@ -49,16 +49,16 @@ app_setup_block: "
   
   * Saving logs to disk is the default, this consumes more space but allows scrollback.
 
-* To log in to the application, browse to `http://<hostip>:9000`
+  * To log in to the application, browse to `http://<hostip>:9000`
 
-* You should now be prompted for a username and password on the webinterface.
+  * You should now be prompted for a username and password on the webinterface.
 
-* Once logged in, you can add an IRC network. Some defaults are preset for Freenode.
-"
+  * Once logged in, you can add an IRC network. Some defaults are preset for Freenode
 
 # changelog
 
 changelogs:
+  - { date: "11.04.22:", desc: "Rebasing to alpine 3.15." }
   - { date: "23.01.21:", desc: "Rebasing to alpine 3.13." }
   - { date: "02.06.20:", desc: "Rebasing to alpine 3.12." }
   - { date: "19.12.19:", desc: "Rebasing to alpine 3.11." }
