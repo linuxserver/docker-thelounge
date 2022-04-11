@@ -66,6 +66,7 @@ This image provides various versions that are available via tags. `latest` tag u
 | :----: | --- |
 | latest | Stable releases. |
 | next | Next Pre-Releases. |
+| nightly | Nightly images from commits in master. |
 
 ## Application Setup
 

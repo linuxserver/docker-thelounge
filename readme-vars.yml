@@ -18,7 +18,7 @@ development_versions: true
 development_versions_items:
   - { tag: "latest", desc: "Stable releases." }
   - { tag: "next", desc: "Next Pre-Releases." }
-  #- { tag: "nightly", desc: "Nightly images from commits in master." }
+  - { tag: "nightly", desc: "Nightly images from commits in master." }
 
 # container parameters
 common_param_env_vars_enabled: true #PGID, PUID, etc, you can set it to 'optional'
