@@ -17,8 +17,6 @@ RUN \
     build-base \
     git \
     python3-dev && \
-  apk add --no-cache --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
-    vips-dev && \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
     curl \
@@ -42,9 +40,7 @@ RUN \
     /tmp/thelounge.tar.gz -C \
     /app/thelounge --strip-components=1 && \
   cd /app/thelounge && \
-  npm install -g --build-from-source \
-    node-gyp \
-    sharp \
+  npm install -g \
     sqlite3 && \
   yarn install && \
   NODE_ENV=production yarn build && \
