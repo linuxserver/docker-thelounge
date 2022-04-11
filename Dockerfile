@@ -32,7 +32,8 @@ RUN \
   sed -i "s/public: false,/public: true,/g" /usr/local/lib/node_modules/thelounge/defaults/config.js && \
   echo "**** cleanup ****" && \
   rm -rf \
-    /root && \
+    /root \
+    /tmp/* && \
   mkdir -p / \
     /root
 
