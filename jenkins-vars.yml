@@ -2,16 +2,18 @@
 
 # jenkins variables
 project_name: docker-thelounge
-external_type: npm_version
+external_type: github_stable
 release_type: stable
 release_tag: latest
 ls_branch: master
 repo_vars:
+  - EXT_GIT_BRANCH = 'master'
+  - EXT_USER = 'thelounge'
+  - EXT_REPO = 'thelounge'
+  - CONTAINER_NAME = 'thelounge'
   - BUILD_VERSION_ARG = 'THELOUNGE_VERSION'
-  - EXT_NPM='thelounge'
   - LS_USER = 'linuxserver'
   - LS_REPO = 'docker-thelounge'
-  - CONTAINER_NAME = 'thelounge'
   - DOCKERHUB_IMAGE = 'linuxserver/thelounge'
   - DEV_DOCKERHUB_IMAGE = 'lsiodev/thelounge'
   - PR_DOCKERHUB_IMAGE = 'lspipepr/thelounge'
