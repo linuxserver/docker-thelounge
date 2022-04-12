@@ -1,5 +1,4 @@
 #!/usr/bin/with-contenv bash
 
-cd /app/thelounge || exit
 exec \
-    s6-setuidgid abc yarn start
+    s6-setuidgid abc thelounge start
