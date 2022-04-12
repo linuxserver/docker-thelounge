@@ -8,8 +8,7 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 LABEL maintainer="aptalca,nemchik"
 
 # environment settings
-ENV THELOUNGE_HOME="/config" \
-NPM_CONFIG_LOGLEVEL="info"
+ENV THELOUNGE_HOME="/config"
 
 RUN \
   echo "**** install build packages ****" && \
@@ -21,15 +20,10 @@ RUN \
   apk add --no-cache \
     curl \
     jq \
-    nodejs \
-    npm \
     yarn && \
-  npm config set unsafe-perm true && \
-  yarn config set unsafe-perm true && \
   echo "**** install the lounge irc ****" && \
   if [ -z ${THELOUNGE_COMMIT+x} ]; then \
-    THELOUNGE_COMMIT=$(curl -s https://api.github.com/repos/thelounge/thelounge/commits/master \
-    | jq -r '. | .sha' | cut -c1-8 ); \
+    THELOUNGE_COMMIT=$(curl -sX GET "https://api.github.com/repos/thelounge/thelounge/commits/master" | jq -r '. | .sha' | cut -c1-8); \
   fi && \
   mkdir -p \
     /app/thelounge && \
@@ -40,11 +34,10 @@ RUN \
     /tmp/thelounge.tar.gz -C \
     /app/thelounge --strip-components=1 && \
   cd /app/thelounge && \
-  npm install -g \
-    sqlite3 && \
   yarn install && \
   NODE_ENV=production yarn build && \
-  yarn cache clean && \
+  yarn link && \
+  yarn --non-interactive cache clean && \
   echo "**** ensure public true on startup aka no users ****" && \
   sed -i "s/public: false,/public: true,/g" defaults/config.js && \
   echo "**** cleanup ****" && \
