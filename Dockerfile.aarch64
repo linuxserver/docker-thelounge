@@ -26,14 +26,14 @@ RUN \
     THELOUNGE_COMMIT=$(curl -sX GET "https://api.github.com/repos/thelounge/thelounge/commits/master" | jq -r '. | .sha' | cut -c1-8); \
   fi && \
   mkdir -p \
-    /app/thelounge && \
+    /tmp/thelounge && \
   curl -o \
     /tmp/thelounge.tar.gz -L \
     "https://github.com/thelounge/thelounge/archive/${THELOUNGE_COMMIT}.tar.gz" && \
   tar xf \
     /tmp/thelounge.tar.gz -C \
-    /app/thelounge --strip-components=1 && \
-  cd /app/thelounge && \
+    /tmp/thelounge --strip-components=1 && \
+  cd /tmp/thelounge && \
   yarn install && \
   NODE_ENV=production yarn build && \
   yarn link && \
