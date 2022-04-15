@@ -26,14 +26,14 @@ RUN \
     THELOUNGE_VERSION=$(curl -sX GET "https://api.github.com/repos/thelounge/thelounge/releases" | jq -r '.[0] | .tag_name'); \
   fi && \
   mkdir -p \
-    /app/thelounge && \
+    /tmp/thelounge && \
   curl -o \
     /tmp/thelounge.tar.gz -L \
     "https://github.com/thelounge/thelounge/archive/refs/tags/${THELOUNGE_VERSION}.tar.gz" && \
   tar xf \
     /tmp/thelounge.tar.gz -C \
-    /app/thelounge --strip-components=1 && \
-  cd /app/thelounge && \
+    /tmp/thelounge --strip-components=1 && \
+  cd /tmp/thelounge && \
   yarn install && \
   NODE_ENV=production yarn build && \
   yarn link && \
