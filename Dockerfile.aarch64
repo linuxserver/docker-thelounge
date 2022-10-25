@@ -21,6 +21,7 @@ RUN \
     curl \
     jq \
     yarn && \
+  ln -s /usr/bin/python3 /usr/bin/python && \
   echo "**** install the lounge irc ****" && \
   if [ -z ${THELOUNGE_VERSION+x} ]; then \
     THELOUNGE_VERSION=$(curl -sX GET "https://api.github.com/repos/thelounge/thelounge/releases/latest" | jq -r '. | .tag_name'); \
