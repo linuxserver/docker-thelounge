@@ -255,6 +255,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **18.12.22:** - Rebasing nightly to alpine 3.17.
 * **12.04.22:** - Install from source using yarn. Cleanups in nightly branch.
 * **11.04.22:** - Rebasing to alpine 3.15. Add tags for pre-releases.
 * **23.01.21:** - Rebasing to alpine 3.13.

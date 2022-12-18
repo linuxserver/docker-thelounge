@@ -1,4 +1,6 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.15
+# syntax=docker/dockerfile:1
+
+FROM ghcr.io/linuxserver/baseimage-alpine:3.17
 
 # set version label
 ARG BUILD_DATE
@@ -18,8 +20,6 @@ RUN \
     python3-dev && \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
-    curl \
-    jq \
     yarn && \
   echo "**** install the lounge irc ****" && \
   if [ -z ${THELOUNGE_COMMIT+x} ]; then \
