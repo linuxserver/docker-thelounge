@@ -255,6 +255,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **18.12.22:** - Rebasing next to alpine 3.17.
 * **24.10.22:** - Fix sqlite3 build.
 * **12.04.22:** - Install from source using yarn.
 * **11.04.22:** - Rebasing to alpine 3.15. Add tags for pre-releases.
