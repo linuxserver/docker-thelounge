@@ -21,7 +21,7 @@ RUN \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
     yarn && \
-  echo "**** install the lounge irc ****" && \
+  echo "**** download thelounge ****" && \
   if [ -z ${THELOUNGE_COMMIT+x} ]; then \
     THELOUNGE_COMMIT=$(curl -sX GET "https://api.github.com/repos/thelounge/thelounge/commits/master" | jq -r '. | .sha' | cut -c1-8); \
   fi && \
@@ -34,12 +34,13 @@ RUN \
     /tmp/thelounge.tar.gz -C \
     /app/thelounge --strip-components=1 && \
   cd /app/thelounge && \
+  echo "**** modify thelounge source ****" && \
+  sed -i "s/public: false,/public: true,/g" defaults/config.js && \
+  echo "**** install thelounge ****" && \
   yarn install && \
   NODE_ENV=production yarn build && \
   yarn link && \
   yarn --non-interactive cache clean && \
-  echo "**** ensure public true on startup aka no users ****" && \
-  sed -i "s/public: false,/public: true,/g" defaults/config.js && \
   echo "**** cleanup ****" && \
   apk del --purge \
     build-dependencies && \
