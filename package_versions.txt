@@ -1053,7 +1053,7 @@ spdx-expression-parse                                                          3
 spdx-license-ids                                                               3.0.11                 npm     
 specificity                                                                    0.4.1                  npm     
 sprintf-js                                                                     1.0.3                  npm     
-sqlite3                                                                        5.1.4                  npm     
+sqlite3                                                                        5.1.5                  npm     
 ssl_client                                                                     1.35.0-r29             apk     
 ssri                                                                           8.0.1                  npm     
 stable                                                                         0.1.8                  npm     
