@@ -170,7 +170,6 @@ NAME                                                                           V
 @types/cors                                                                    2.8.12                 npm     
 @types/eslint                                                                  8.4.5                  npm     
 @types/eslint-scope                                                            3.7.4                  npm     
-@types/estree                                                                  0.0.50                 npm     
 @types/estree                                                                  0.0.51                 npm     
 @types/estree                                                                  1.0.0                  npm     
 @types/express                                                                 4.17.13                npm     
@@ -470,6 +469,7 @@ engine.io                                                                      6
 engine.io-client                                                               6.2.3                  npm     
 engine.io-parser                                                               5.0.4                  npm     
 enhanced-resolve                                                               5.10.0                 npm     
+enhanced-resolve                                                               5.12.0                 npm     
 entities                                                                       2.2.0                  npm     
 env-paths                                                                      2.2.1                  npm     
 envinfo                                                                        7.8.1                  npm     
@@ -1053,7 +1053,7 @@ spdx-expression-parse                                                          3
 spdx-license-ids                                                               3.0.11                 npm     
 specificity                                                                    0.4.1                  npm     
 sprintf-js                                                                     1.0.3                  npm     
-sqlite3                                                                        5.1.5                  npm     
+sqlite3                                                                        5.1.6                  npm     
 ssl_client                                                                     1.35.0-r29             apk     
 ssri                                                                           8.0.1                  npm     
 stable                                                                         0.1.8                  npm     
@@ -1156,8 +1156,8 @@ vuex                                                                           4
 watchpack                                                                      2.4.0                  npm     
 web-push                                                                       3.4.5                  npm     
 webidl-conversions                                                             3.0.1                  npm     
-webpack                                                                        5.68.0                 npm     
 webpack                                                                        5.73.0                 npm     
+webpack                                                                        5.76.0                 npm     
 webpack-cli                                                                    4.9.2                  npm     
 webpack-dev-middleware                                                         5.3.3                  npm     
 webpack-hot-middleware                                                         2.25.1                 npm     
