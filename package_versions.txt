@@ -465,7 +465,7 @@ emojis-list                                                                    3
 encodeurl                                                                      1.0.2                  npm     
 encoding                                                                       0.1.13                 npm     
 end-of-stream                                                                  1.4.4                  npm     
-engine.io                                                                      6.2.1                  npm     
+engine.io                                                                      6.4.2                  npm     
 engine.io-client                                                               6.2.3                  npm     
 engine.io-parser                                                               5.0.4                  npm     
 enhanced-resolve                                                               5.10.0                 npm     
@@ -1033,11 +1033,12 @@ slash                                                                          3
 slash                                                                          4.0.0                  npm     
 slice-ansi                                                                     4.0.0                  npm     
 smart-buffer                                                                   4.2.0                  npm     
-socket.io                                                                      4.5.2                  npm     
-socket.io-adapter                                                              2.4.0                  npm     
+socket.io                                                                      4.6.1                  npm     
+socket.io-adapter                                                              2.5.2                  npm     
 socket.io-client                                                               4.4.0                  npm     
 socket.io-client                                                               4.5.0                  npm     
 socket.io-parser                                                               4.2.1                  npm     
+socket.io-parser                                                               4.2.2                  npm     
 socks                                                                          2.7.0                  npm     
 socks                                                                          2.7.1                  npm     
 socks-proxy-agent                                                              6.2.1                  npm     
@@ -1094,7 +1095,7 @@ test-exclude                                                                   6
 text-decoding                                                                  1.0.0                  npm     
 text-table                                                                     0.2.0                  npm     
 textarea-caret                                                                 3.1.0                  npm     
-thelounge                                                                      4.4.0-pre.2            npm     
+thelounge                                                                      4.4.0-rc.1             npm     
 thelounge-package-foo                                                          dummy                  npm     
 tlds                                                                           1.228.0                npm     
 to-fast-properties                                                             2.0.0                  npm     
@@ -1180,6 +1181,7 @@ wrap-ansi                                                                      7
 wrappy                                                                         1.0.2                  npm     
 write-file-atomic                                                              3.0.3                  npm     
 write-file-atomic                                                              4.0.1                  npm     
+ws                                                                             8.11.0                 npm     
 ws                                                                             8.2.3                  npm     
 xml-name-validator                                                             4.0.0                  npm     
 xmlhttprequest-ssl                                                             2.0.0                  npm     
