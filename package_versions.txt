@@ -347,7 +347,7 @@ busybox                                                                        1
 busybox                                                                        1.35.0-r29             apk     
 busybox-binsh                                                                  1.35.0-r29             apk     
 bytes                                                                          3.1.2                  npm     
-c-ares                                                                         1.18.1-r1              apk     
+c-ares                                                                         1.19.1-r0              apk     
 ca-certificates                                                                20230506-r0            apk     
 ca-certificates-bundle                                                         20230506-r0            apk     
 cacache                                                                        15.3.0                 npm     
