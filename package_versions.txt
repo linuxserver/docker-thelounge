@@ -1037,8 +1037,7 @@ socket.io                                                                      4
 socket.io-adapter                                                              2.5.2                  npm     
 socket.io-client                                                               4.4.0                  npm     
 socket.io-client                                                               4.5.0                  npm     
-socket.io-parser                                                               4.2.1                  npm     
-socket.io-parser                                                               4.2.2                  npm     
+socket.io-parser                                                               4.2.3                  npm     
 socks                                                                          2.7.0                  npm     
 socks                                                                          2.7.1                  npm     
 socks-proxy-agent                                                              6.2.1                  npm     
@@ -1095,7 +1094,7 @@ test-exclude                                                                   6
 text-decoding                                                                  1.0.0                  npm     
 text-table                                                                     0.2.0                  npm     
 textarea-caret                                                                 3.1.0                  npm     
-thelounge                                                                      4.4.1-rc.1             npm     
+thelounge                                                                      4.4.1-rc.2             npm     
 thelounge-package-foo                                                          dummy                  npm     
 tlds                                                                           1.228.0                npm     
 to-fast-properties                                                             2.0.0                  npm     
