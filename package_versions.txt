@@ -285,7 +285,7 @@ ajv-keywords                                                                   5
 alpine-baselayout                                                              3.4.3-r1                apk     
 alpine-baselayout-data                                                         3.4.3-r1                apk     
 alpine-keys                                                                    2.4-r1                  apk     
-alpine-release                                                                 3.18.0-r0               apk     
+alpine-release                                                                 3.18.2-r0               apk     
 ansi-colors                                                                    4.1.1                   npm     
 ansi-html-community                                                            0.0.8                   npm     
 ansi-regex                                                                     5.0.1                   npm     
@@ -604,8 +604,8 @@ husky                                                                          4
 iconv-lite                                                                     0.4.24                  npm     
 iconv-lite                                                                     0.6.3                   npm     
 icss-utils                                                                     5.1.0                   npm     
-icu-data-en                                                                    73.1-r1                 apk     
-icu-libs                                                                       73.1-r1                 apk     
+icu-data-en                                                                    73.2-r0                 apk     
+icu-libs                                                                       73.2-r0                 apk     
 ieee754                                                                        1.2.1                   npm     
 ignore                                                                         5.2.0                   npm     
 import-fresh                                                                   3.3.0                   npm     
@@ -1018,7 +1018,7 @@ serialize-javascript                                                           6
 serve-static                                                                   1.14.2                  npm     
 set-blocking                                                                   2.0.0                   npm     
 setprototypeof                                                                 1.2.0                   npm     
-shadow                                                                         4.13-r2                 apk     
+shadow                                                                         4.13-r4                 apk     
 shallow-clone                                                                  3.0.1                   npm     
 shebang-command                                                                1.2.0                   npm     
 shebang-command                                                                2.0.0                   npm     
@@ -1096,7 +1096,7 @@ test-exclude                                                                   6
 text-decoding                                                                  1.0.0                   npm     
 text-table                                                                     0.2.0                   npm     
 textarea-caret                                                                 3.1.0                   npm     
-thelounge                                                                      4.4.1-rc.2              npm     
+thelounge                                                                      4.4.1                   npm     
 thelounge-package-foo                                                          dummy                   npm     
 tlds                                                                           1.228.0                 npm     
 to-fast-properties                                                             2.0.0                   npm     
