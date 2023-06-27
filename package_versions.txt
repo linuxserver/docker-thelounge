@@ -795,7 +795,7 @@ nghttp2-libs                                                                   1
 nice-try                                                                       1.0.5                   npm     
 nise                                                                           4.1.0                   npm     
 nise                                                                           5.1.4                   npm     
-node                                                                           18.16.0                 binary  
+node                                                                           18.16.1                 binary  
 node-abort-controller                                                          3.0.1                   npm     
 node-addon-api                                                                 4.3.0                   npm     
 node-fetch                                                                     2.6.7                   npm     
@@ -804,7 +804,7 @@ node-forge-flash                                                               0
 node-gyp                                                                       8.4.1                   npm     
 node-preload                                                                   0.2.1                   npm     
 node-releases                                                                  2.0.6                   npm     
-nodejs                                                                         18.16.0-r1              apk     
+nodejs                                                                         18.16.1-r0              apk     
 nopt                                                                           5.0.0                   npm     
 nopt                                                                           6.0.0                   npm     
 normalize-package-data                                                         2.5.0                   npm     
