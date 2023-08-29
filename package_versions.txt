@@ -802,7 +802,7 @@ node-forge-flash                                                               0
 node-gyp                                                                       8.4.1                   npm   
 node-preload                                                                   0.2.1                   npm   
 node-releases                                                                  2.0.6                   npm   
-nodejs                                                                         18.17.0-r0              apk   
+nodejs                                                                         18.17.1-r0              apk   
 nopt                                                                           5.0.0                   npm   
 nopt                                                                           6.0.0                   npm   
 normalize-package-data                                                         2.5.0                   npm   
