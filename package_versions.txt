@@ -158,12 +158,12 @@ NAME                                                                           V
 @tsconfig/node12                                                               1.0.11                  npm   
 @tsconfig/node14                                                               1.0.3                   npm   
 @tsconfig/node16                                                               1.0.3                   npm   
-@types/bcryptjs                                                                2.4.5                   npm   
+@types/bcryptjs                                                                2.4.6                   npm   
 @types/body-parser                                                             1.19.2                  npm   
 @types/cacheable-request                                                       6.0.2                   npm   
 @types/chai                                                                    4.3.1                   npm   
 @types/chai                                                                    4.3.5                   npm   
-@types/cheerio                                                                 0.22.33                 npm   
+@types/cheerio                                                                 0.22.35                 npm   
 @types/connect                                                                 3.4.35                  npm   
 @types/content-disposition                                                     0.5.7                   npm   
 @types/cookie                                                                  0.4.1                   npm   
