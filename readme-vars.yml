@@ -27,7 +27,7 @@ param_env_vars:
   - { env_var: "TZ", env_value: "Europe/London", desc: "Specify a timezone to use EG Europe/London." }
 param_usage_include_vols: true
 param_volumes:
-  - { vol_path: "/config", vol_host_path: "</path/to/appdata/config>", desc: "Configuration files." }
+  - { vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/config", desc: "Persistent config files" }
 param_usage_include_ports: true
 param_ports:
   - { external_port: "9000", internal_port: "9000", port_desc: "Application WebUI" }
@@ -64,6 +64,7 @@ app_setup_block: |
 # changelog
 
 changelogs:
+  - { date: "23.12.23:", desc: "Rebase to Alpine 3.19."}
   - { date: "25.05.23:", desc: "Rebase to Alpine 3.18, deprecate armhf." }
   - { date: "18.12.22:", desc: "Rebasing next to alpine 3.17." }
   - { date: "24.10.22:", desc: "Fix sqlite3 build." }
