@@ -1117,7 +1117,7 @@ test-exclude                                                                   6
 text-decoding                                                                  1.0.0                  npm   
 text-table                                                                     0.2.0                  npm   
 textarea-caret                                                                 3.1.0                  npm   
-thelounge                                                                      4.4.1                  npm   
+thelounge                                                                      4.4.2-rc.1             npm   
 thelounge-package-foo                                                          dummy                  npm   
 tlds                                                                           1.228.0                npm   
 to-fast-properties                                                             2.0.0                  npm   
