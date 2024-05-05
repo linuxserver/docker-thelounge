@@ -125,12 +125,16 @@ NAME                                                                           V
 @csstools/postcss-progressive-custom-properties                                1.3.0                  npm                     
 @csstools/selector-specificity                                                 2.0.2                  npm                     
 @discoveryjs/json-ext                                                          0.5.7                  npm                     
-@eslint/eslintrc                                                               1.3.0                  npm                     
+@eslint-community/eslint-utils                                                 4.4.0                  npm                     
+@eslint-community/regexpp                                                      4.10.0                 npm                     
+@eslint/eslintrc                                                               2.1.4                  npm                     
+@eslint/js                                                                     8.57.0                 npm                     
 @fastify/busboy                                                                1.0.0                  npm                     
 @fortawesome/fontawesome-free                                                  5.15.4                 npm                     
 @gar/promisify                                                                 1.1.3                  npm                     
-@humanwhocodes/config-array                                                    0.9.5                  npm                     
-@humanwhocodes/object-schema                                                   1.2.1                  npm                     
+@humanwhocodes/config-array                                                    0.11.14                npm                     
+@humanwhocodes/module-importer                                                 1.0.1                  npm                     
+@humanwhocodes/object-schema                                                   2.0.3                  npm                     
 @istanbuljs/load-nyc-config                                                    1.1.0                  npm                     
 @istanbuljs/nyc-config-typescript                                              1.0.2                  npm                     
 @istanbuljs/schema                                                             0.1.3                  npm                     
@@ -192,6 +196,7 @@ NAME                                                                           V
 @types/is-utf8                                                                 0.2.3                  npm                     
 @types/json-buffer                                                             3.0.0                  npm                     
 @types/json-schema                                                             7.0.11                 npm                     
+@types/json-schema                                                             7.0.15                 npm                     
 @types/keyv                                                                    3.1.4                  npm                     
 @types/ldapjs                                                                  2.2.2                  npm                     
 @types/linkify-it                                                              3.0.5                  npm                     
@@ -212,6 +217,7 @@ NAME                                                                           V
 @types/read                                                                    0.0.32                 npm                     
 @types/responselike                                                            1.0.0                  npm                     
 @types/semver                                                                  7.3.9                  npm                     
+@types/semver                                                                  7.5.8                  npm                     
 @types/send                                                                    0.17.4                 npm                     
 @types/serve-static                                                            1.13.10                npm                     
 @types/sinon                                                                   10.0.13                npm                     
@@ -226,15 +232,16 @@ NAME                                                                           V
 @types/webpack-env                                                             1.16.4                 npm                     
 @types/webpack-hot-middleware                                                  2.25.6                 npm                     
 @types/ws                                                                      8.5.4                  npm                     
-@typescript-eslint/eslint-plugin                                               5.22.0                 npm                     
-@typescript-eslint/parser                                                      5.22.0                 npm                     
-@typescript-eslint/scope-manager                                               5.22.0                 npm                     
-@typescript-eslint/type-utils                                                  5.22.0                 npm                     
-@typescript-eslint/types                                                       5.22.0                 npm                     
-@typescript-eslint/typescript-estree                                           5.22.0                 npm                     
-@typescript-eslint/utils                                                       5.22.0                 npm                     
-@typescript-eslint/visitor-keys                                                5.22.0                 npm                     
+@typescript-eslint/eslint-plugin                                               7.8.0                  npm                     
+@typescript-eslint/parser                                                      7.8.0                  npm                     
+@typescript-eslint/scope-manager                                               7.8.0                  npm                     
+@typescript-eslint/type-utils                                                  7.8.0                  npm                     
+@typescript-eslint/types                                                       7.8.0                  npm                     
+@typescript-eslint/typescript-estree                                           7.8.0                  npm                     
+@typescript-eslint/utils                                                       7.8.0                  npm                     
+@typescript-eslint/visitor-keys                                                7.8.0                  npm                     
 @ungap/promise-all-settled                                                     1.1.2                  npm                     
+@ungap/structured-clone                                                        1.2.0                  npm                     
 @vue/compiler-core                                                             3.2.35                 npm                     
 @vue/compiler-core                                                             3.2.37                 npm                     
 @vue/compiler-dom                                                              3.2.35                 npm                     
@@ -280,9 +287,10 @@ NAME                                                                           V
 abbrev                                                                         1.1.1                  npm                     
 abstract-logging                                                               2.0.1                  npm                     
 accepts                                                                        1.3.8                  npm                     
+acorn                                                                          8.11.3                 npm   (+1 duplicate)    
 acorn                                                                          8.8.0                  npm                     
 acorn-import-assertions                                                        1.8.0                  npm                     
-acorn-jsx                                                                      5.3.2                  npm                     
+acorn-jsx                                                                      5.3.2                  npm   (+1 duplicate)    
 acorn-walk                                                                     8.2.0                  npm                     
 ada-libs                                                                       2.7.4-r0               apk                     
 agent-base                                                                     6.0.2                  npm                     
@@ -348,7 +356,7 @@ bn.js                                                                          4
 body-parser                                                                    1.20.2                 npm                     
 boolbase                                                                       1.0.0                  npm                     
 brace-expansion                                                                1.1.11                 npm                     
-brace-expansion                                                                2.0.1                  npm                     
+brace-expansion                                                                2.0.1                  npm   (+1 duplicate)    
 braces                                                                         3.0.2                  npm                     
 brotli-libs                                                                    1.1.0-r1               apk                     
 browser-stdout                                                                 1.3.1                  npm                     
@@ -506,18 +514,20 @@ escalade                                                                       3
 escape-html                                                                    1.0.3                  npm                     
 escape-string-regexp                                                           1.0.5                  npm                     
 escape-string-regexp                                                           4.0.0                  npm   (+1 duplicate)    
-eslint                                                                         8.16.0                 npm                     
-eslint-config-prettier                                                         8.3.0                  npm                     
-eslint-define-config                                                           1.5.1                  npm                     
-eslint-plugin-vue                                                              9.0.1                  npm                     
+eslint                                                                         8.57.0                 npm                     
+eslint-config-prettier                                                         9.1.0                  npm                     
+eslint-define-config                                                           2.1.0                  npm                     
+eslint-plugin-vue                                                              9.25.0                 npm                     
 eslint-scope                                                                   5.1.1                  npm                     
-eslint-scope                                                                   7.1.1                  npm   (+2 duplicates)   
-eslint-utils                                                                   3.0.0                  npm                     
-eslint-visitor-keys                                                            2.1.0                  npm                     
+eslint-scope                                                                   7.1.1                  npm                     
+eslint-scope                                                                   7.2.2                  npm                     
 eslint-visitor-keys                                                            3.3.0                  npm                     
+eslint-visitor-keys                                                            3.4.3                  npm   (+2 duplicates)   
 espree                                                                         9.3.2                  npm                     
+espree                                                                         9.6.1                  npm                     
 esprima                                                                        4.0.1                  npm                     
 esquery                                                                        1.4.0                  npm                     
+esquery                                                                        1.5.0                  npm                     
 esrecurse                                                                      4.3.0                  npm                     
 estraverse                                                                     4.3.0                  npm                     
 estraverse                                                                     5.3.0                  npm                     
@@ -549,7 +559,7 @@ fill-range                                                                     7
 finalhandler                                                                   1.2.0                  npm                     
 find-cache-dir                                                                 3.3.2                  npm                     
 find-up                                                                        4.1.0                  npm                     
-find-up                                                                        5.0.0                  npm                     
+find-up                                                                        5.0.0                  npm   (+1 duplicate)    
 findutils                                                                      4.9.0-r5               apk                     
 flat                                                                           5.0.2                  npm                     
 flat-cache                                                                     3.0.4                  npm                     
@@ -568,7 +578,6 @@ fs-monkey                                                                      1
 fs.realpath                                                                    1.0.0                  npm                     
 function-bind                                                                  1.1.1                  npm                     
 function.prototype.name                                                        1.1.5                  npm                     
-functional-red-black-tree                                                      1.0.1                  npm                     
 functions-have-names                                                           1.2.3                  npm                     
 fuzzy                                                                          0.1.3                  npm                     
 gauge                                                                          4.0.4                  npm                     
@@ -590,14 +599,15 @@ glob-parent                                                                    6
 glob-to-regexp                                                                 0.4.1                  npm                     
 global-modules                                                                 2.0.0                  npm                     
 global-prefix                                                                  3.0.0                  npm                     
-globals                                                                        11.12.0                npm                     
-globals                                                                        13.17.0                npm   (+1 duplicate)    
+globals                                                                        11.12.0                npm   (+1 duplicate)    
+globals                                                                        13.24.0                npm                     
 globby                                                                         11.1.0                 npm                     
 globby                                                                         12.2.0                 npm                     
 globjoin                                                                       0.1.4                  npm                     
 got                                                                            11.8.5                 npm                     
 graceful-fs                                                                    4.2.10                 npm                     
 grapheme-splitter                                                              1.0.4                  npm                     
+graphemer                                                                      1.4.0                  npm                     
 growl                                                                          1.10.5                 npm                     
 hard-rejection                                                                 2.1.0                  npm                     
 has                                                                            1.0.3                  npm                     
@@ -633,6 +643,7 @@ icu-data-en                                                                    7
 icu-libs                                                                       74.1-r0                apk                     
 ieee754                                                                        1.2.1                  npm                     
 ignore                                                                         5.2.0                  npm                     
+ignore                                                                         5.3.1                  npm                     
 import-fresh                                                                   3.3.0                  npm                     
 import-lazy                                                                    4.0.0                  npm                     
 import-local                                                                   3.1.0                  npm                     
@@ -663,6 +674,7 @@ is-lambda                                                                      1
 is-negative-zero                                                               2.0.2                  npm                     
 is-number                                                                      7.0.0                  npm                     
 is-number-object                                                               1.0.7                  npm                     
+is-path-inside                                                                 3.0.3                  npm                     
 is-plain-obj                                                                   1.1.0                  npm                     
 is-plain-obj                                                                   2.1.0                  npm                     
 is-plain-object                                                                2.0.4                  npm                     
@@ -741,7 +753,7 @@ load-json-file                                                                 4
 loader-runner                                                                  4.3.0                  npm                     
 loader-utils                                                                   2.0.4                  npm                     
 locate-path                                                                    5.0.0                  npm                     
-locate-path                                                                    6.0.0                  npm                     
+locate-path                                                                    6.0.0                  npm   (+1 duplicate)    
 lodash                                                                         4.17.21                npm                     
 lodash.debounce                                                                4.0.8                  npm                     
 lodash.flattendeep                                                             4.4.0                  npm                     
@@ -788,6 +800,7 @@ minimalistic-assert                                                            1
 minimatch                                                                      3.1.2                  npm   (+1 duplicate)    
 minimatch                                                                      4.2.1                  npm                     
 minimatch                                                                      5.1.6                  npm                     
+minimatch                                                                      9.0.4                  npm                     
 minimist                                                                       1.2.6                  npm                     
 minimist                                                                       1.2.8                  npm                     
 minimist-options                                                               4.1.0                  npm                     
@@ -856,13 +869,13 @@ on-finished                                                                    2
 once                                                                           1.4.0                  npm                     
 onetime                                                                        5.1.2                  npm                     
 oniguruma                                                                      6.9.9-r0               apk                     
-optionator                                                                     0.9.1                  npm                     
+optionator                                                                     0.9.4                  npm                     
 p-cancelable                                                                   2.1.1                  npm                     
 p-finally                                                                      1.0.0                  npm                     
 p-limit                                                                        2.3.0                  npm                     
-p-limit                                                                        3.1.0                  npm                     
+p-limit                                                                        3.1.0                  npm   (+1 duplicate)    
 p-locate                                                                       4.1.0                  npm                     
-p-locate                                                                       5.0.0                  npm                     
+p-locate                                                                       5.0.0                  npm   (+1 duplicate)    
 p-map                                                                          3.0.0                  npm                     
 p-map                                                                          4.0.0                  npm                     
 p-try                                                                          2.2.0                  npm                     
@@ -958,6 +971,7 @@ postcss-resolve-nested-selector                                                0
 postcss-safe-parser                                                            6.0.0                  npm                     
 postcss-selector-not                                                           5.0.0                  npm                     
 postcss-selector-parser                                                        6.0.10                 npm                     
+postcss-selector-parser                                                        6.0.16                 npm                     
 postcss-svgo                                                                   5.1.0                  npm                     
 postcss-unique-selectors                                                       5.1.1                  npm                     
 postcss-value-parser                                                           4.2.0                  npm                     
@@ -1004,7 +1018,6 @@ regenerator-runtime                                                            0
 regenerator-runtime                                                            0.13.9                 npm                     
 regenerator-transform                                                          0.15.0                 npm                     
 regexp.prototype.flags                                                         1.4.3                  npm                     
-regexpp                                                                        3.2.0                  npm                     
 regexpu-core                                                                   5.1.0                  npm                     
 registry-auth-token                                                            4.2.2                  npm                     
 registry-url                                                                   5.1.0                  npm                     
@@ -1035,6 +1048,7 @@ semver                                                                         5
 semver                                                                         6.3.0                  npm   (+8 duplicates)   
 semver                                                                         7.0.0                  npm                     
 semver                                                                         7.5.2                  npm                     
+semver                                                                         7.6.0                  npm   (+3 duplicates)   
 send                                                                           0.18.0                 npm                     
 serialize-javascript                                                           6.0.0                  npm                     
 serve-static                                                                   1.15.0                 npm                     
@@ -1131,21 +1145,20 @@ toidentifier                                                                   1
 token-types                                                                    4.2.0                  npm                     
 trim-newlines                                                                  3.0.1                  npm                     
 trim-repeated                                                                  1.0.0                  npm                     
+ts-api-utils                                                                   1.3.0                  npm                     
 ts-loader                                                                      9.3.0                  npm                     
 ts-node                                                                        10.7.0                 npm                     
 ts-sinon                                                                       2.0.2                  npm                     
-tslib                                                                          1.14.1                 npm                     
-tsutils                                                                        3.21.0                 npm                     
 tunnel-agent                                                                   0.6.0                  npm                     
 type-check                                                                     0.4.0                  npm                     
 type-detect                                                                    4.0.8                  npm                     
 type-fest                                                                      0.18.1                 npm                     
-type-fest                                                                      0.20.2                 npm   (+1 duplicate)    
+type-fest                                                                      0.20.2                 npm                     
 type-fest                                                                      0.6.0                  npm                     
 type-fest                                                                      0.8.1                  npm                     
 type-is                                                                        1.6.18                 npm                     
 typedarray-to-buffer                                                           3.1.5                  npm                     
-typescript                                                                     4.7.2                  npm                     
+typescript                                                                     5.4.5                  npm                     
 tzdata                                                                         2024a-r0               apk                     
 ua-parser-js                                                                   1.0.33                 npm                     
 uc.micro                                                                       1.0.6                  npm                     
@@ -1176,8 +1189,7 @@ verror                                                                         1
 verror                                                                         1.10.1                 npm                     
 vue                                                                            3.2.35                 npm                     
 vue-component-type-helpers                                                     1.6.5                  npm                     
-vue-eslint-parser                                                              8.3.0                  npm                     
-vue-eslint-parser                                                              9.0.3                  npm                     
+vue-eslint-parser                                                              9.4.2                  npm                     
 vue-loader                                                                     17.0.1                 npm                     
 vue-router                                                                     4.0.15                 npm                     
 vuex                                                                           4.0.2                  npm                     
