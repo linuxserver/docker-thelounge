@@ -41,6 +41,7 @@ RUN \
   NODE_ENV=production yarn build && \
   yarn link && \
   yarn --non-interactive cache clean && \
+  printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
   echo "**** cleanup ****" && \
   apk del --purge \
     build-dependencies && \
