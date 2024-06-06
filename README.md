@@ -91,7 +91,7 @@ This image provides various versions that are available via tags. Please read th
 
 * To log in to the application, browse to `http://<hostip>:9000`
 
-* You should now be prompted for a username and password on the webinterface.
+* You should now be prompted for a username and password on the web interface.
 
 * Once logged in, you can add an IRC network. Some defaults are preset for Freenode
 
@@ -305,6 +305,7 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
+* **06.06.24:** - Rebase to Alpine 3.20.
 * **23.12.23:** - Rebase to Alpine 3.19.
 * **25.05.23:** - Rebase to Alpine 3.18, deprecate armhf.
 * **18.12.22:** - Rebasing master to alpine 3.17.
