@@ -441,7 +441,7 @@ cssnano-preset-default                                                         5
 cssnano-utils                                                                  3.1.0                  npm                     
 csso                                                                           4.2.0                  npm                     
 csstype                                                                        2.6.20                 npm                     
-curl                                                                           8.7.1-r0               apk                     
+curl                                                                           8.8.0-r0               apk                     
 dayjs                                                                          1.10.8                 npm                     
 debug                                                                          2.6.9                  npm   (+3 duplicates)   
 debug                                                                          4.3.3                  npm                     
@@ -718,8 +718,8 @@ libacl                                                                         2
 libattr                                                                        2.5.2-r0               apk                     
 libbase64                                                                      0.5.2-r0               apk                     
 libbsd                                                                         0.12.2-r0              apk                     
-libcrypto3                                                                     3.3.1-r0               apk                     
-libcurl                                                                        8.7.1-r0               apk                     
+libcrypto3                                                                     3.3.1-r1               apk                     
+libcurl                                                                        8.8.0-r0               apk                     
 libgcc                                                                         13.2.1_git20240309-r0  apk                     
 libidn2                                                                        2.3.7-r0               apk                     
 libintl                                                                        0.22.5-r0              apk                     
@@ -727,7 +727,7 @@ libmd                                                                          1
 libncursesw                                                                    6.4_p20240420-r0       apk                     
 libproc2                                                                       4.0.4-r0               apk                     
 libpsl                                                                         0.21.5-r1              apk                     
-libssl3                                                                        3.3.1-r0               apk                     
+libssl3                                                                        3.3.1-r1               apk                     
 libstdc++                                                                      13.2.1_git20240309-r0  apk                     
 libunistring                                                                   1.2-r0                 apk                     
 lilconfig                                                                      2.0.6                  npm                     
@@ -818,7 +818,7 @@ ncurses-terminfo-base                                                          6
 negotiator                                                                     0.6.3                  npm                     
 neo-async                                                                      2.6.2                  npm                     
 netcat-openbsd                                                                 1.226-r0               apk                     
-nghttp2-libs                                                                   1.62.0-r0              apk                     
+nghttp2-libs                                                                   1.62.1-r0              apk                     
 nice-try                                                                       1.0.5                  npm                     
 nise                                                                           4.1.0                  npm                     
 nise                                                                           5.1.4                  npm                     
