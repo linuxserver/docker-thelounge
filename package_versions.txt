@@ -360,8 +360,8 @@ busybox                                                                        1
 busybox-binsh                                                                  1.36.1-r29             apk                     
 bytes                                                                          3.1.2                  npm                     
 c-ares                                                                         1.28.1-r0              apk                     
-ca-certificates                                                                20240226-r0            apk                     
-ca-certificates-bundle                                                         20240226-r0            apk                     
+ca-certificates                                                                20240705-r0            apk                     
+ca-certificates-bundle                                                         20240705-r0            apk                     
 cacache                                                                        15.3.0                 npm                     
 cacheable-lookup                                                               5.0.4                  npm                     
 cacheable-request                                                              7.0.2                  npm                     
@@ -718,7 +718,7 @@ libacl                                                                         2
 libattr                                                                        2.5.2-r0               apk                     
 libbase64                                                                      0.5.2-r0               apk                     
 libbsd                                                                         0.12.2-r0              apk                     
-libcrypto3                                                                     3.3.1-r1               apk                     
+libcrypto3                                                                     3.3.1-r3               apk                     
 libcurl                                                                        8.8.0-r0               apk                     
 libgcc                                                                         13.2.1_git20240309-r0  apk                     
 libidn2                                                                        2.3.7-r0               apk                     
@@ -727,7 +727,7 @@ libmd                                                                          1
 libncursesw                                                                    6.4_p20240420-r0       apk                     
 libproc2                                                                       4.0.4-r0               apk                     
 libpsl                                                                         0.21.5-r1              apk                     
-libssl3                                                                        3.3.1-r1               apk                     
+libssl3                                                                        3.3.1-r3               apk                     
 libstdc++                                                                      13.2.1_git20240309-r0  apk                     
 libunistring                                                                   1.2-r0                 apk                     
 lilconfig                                                                      2.0.6                  npm                     
@@ -830,7 +830,7 @@ node-forge-flash                                                               0
 node-gyp                                                                       8.4.1                  npm                     
 node-preload                                                                   0.2.1                  npm                     
 node-releases                                                                  2.0.6                  npm                     
-nodejs                                                                         20.13.1-r0             apk                     
+nodejs                                                                         20.15.1-r0             apk                     
 nopt                                                                           5.0.0                  npm                     
 nopt                                                                           6.0.0                  npm                     
 normalize-package-data                                                         2.5.0                  npm                     
