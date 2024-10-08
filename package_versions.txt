@@ -375,6 +375,7 @@ balanced-match                                                                 2
 base64-js                                                                      1.5.1                  npm                     
 base64id                                                                       2.0.0                  npm                     
 bash                                                                           5.2.26-r0              apk                     
+baz                                                                            UNKNOWN                npm                     
 bcryptjs                                                                       2.4.3                  npm                     
 beep-boop                                                                      1.2.3                  npm                     
 big.js                                                                         5.2.2                  npm                     
@@ -390,6 +391,7 @@ brace-expansion                                                                2
 braces                                                                         3.0.3                  npm                     
 brotli-libs                                                                    1.1.0-r2               apk                     
 browser-stdout                                                                 1.3.1                  npm                     
+browser_field                                                                  UNKNOWN                npm                     
 browserslist                                                                   4.21.2                 npm                     
 browserslist                                                                   4.23.3                 npm                     
 buffer                                                                         5.7.1                  npm                     
@@ -540,7 +542,9 @@ encoding-sniffer                                                               0
 end-of-stream                                                                  1.4.4                  npm                     
 engine.io                                                                      6.4.2                  npm                     
 engine.io-client                                                               6.2.3                  npm                     
+engine.io-client                                                               UNKNOWN                npm   (+2 duplicates)   
 engine.io-parser                                                               5.0.4                  npm                     
+engine.io-parser                                                               UNKNOWN                npm   (+1 duplicate)    
 enhanced-resolve                                                               5.10.0                 npm                     
 enhanced-resolve                                                               5.17.1                 npm                     
 entities                                                                       2.2.0                  npm                     
@@ -593,6 +597,7 @@ execall                                                                        2
 expand-template                                                                2.0.3                  npm                     
 express                                                                        4.20.0                 npm                     
 extsprintf                                                                     1.4.1                  npm                     
+false_main                                                                     UNKNOWN                npm                     
 fast-deep-equal                                                                3.1.3                  npm                     
 fast-glob                                                                      3.2.11                 npm                     
 fast-json-stable-stringify                                                     2.1.0                  npm                     
@@ -712,6 +717,7 @@ inherits                                                                       2
 ini                                                                            1.3.8                  npm                     
 internal-slot                                                                  1.0.7                  npm                     
 interpret                                                                      2.2.0                  npm                     
+invalid_main                                                                   UNKNOWN                npm                     
 ip                                                                             2.0.1                  npm                     
 ip-address                                                                     9.0.5                  npm                     
 ipaddr.js                                                                      1.9.1                  npm                     
