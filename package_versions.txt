@@ -730,7 +730,7 @@ libgcc                                                                         1
 libidn2                                                                        2.3.7-r0               apk                     
 libintl                                                                        0.22.5-r0              apk                     
 libmd                                                                          1.1.0-r0               apk                     
-libncursesw                                                                    6.4_p20240420-r1       apk                     
+libncursesw                                                                    6.4_p20240420-r2       apk                     
 libproc2                                                                       4.0.4-r0               apk                     
 libpsl                                                                         0.21.5-r1              apk                     
 libssl3                                                                        3.3.2-r0               apk                     
@@ -820,7 +820,7 @@ nanoid                                                                         3
 nanoid                                                                         3.3.6                  npm                     
 napi-build-utils                                                               1.0.2                  npm                     
 natural-compare                                                                1.4.0                  npm                     
-ncurses-terminfo-base                                                          6.4_p20240420-r1       apk                     
+ncurses-terminfo-base                                                          6.4_p20240420-r2       apk                     
 negotiator                                                                     0.6.3                  npm                     
 neo-async                                                                      2.6.2                  npm                     
 netcat-openbsd                                                                 1.226-r0               apk                     
