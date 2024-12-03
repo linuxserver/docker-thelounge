@@ -6,31 +6,26 @@ project_url: "https://thelounge.github.io/"
 project_logo: "https://raw.githubusercontent.com/thelounge/thelounge/master/client/img/logo-vertical-transparent-bg.svg?sanitize=true"
 project_blurb: "[{{ project_name|capitalize }}]({{ project_url }}) (a fork of shoutIRC) is a web IRC client that you host on your own server."
 project_lsio_github_repo_url: "https://github.com/linuxserver/docker-{{ project_name }}"
-
 # supported architectures
 available_architectures:
-  - { arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
-  - { arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
-
+  - {arch: "{{ arch_x86_64 }}", tag: "amd64-latest"}
+  - {arch: "{{ arch_arm64 }}", tag: "arm64v8-latest"}
 # development version
 development_versions: true
 development_versions_items:
-  - { tag: "latest", desc: "Stable releases." }
-  - { tag: "next", desc: "Next Pre-Releases." }
-  - { tag: "nightly", desc: "Nightly images from commits in master." }
-
+  - {tag: "latest", desc: "Stable releases."}
+  - {tag: "next", desc: "Next Pre-Releases."}
+  - {tag: "nightly", desc: "Nightly images from commits in master."}
 # container parameters
 common_param_env_vars_enabled: true #PGID, PUID, etc, you can set it to 'optional'
 param_container_name: "{{ project_name }}"
 param_usage_include_vols: true
 param_volumes:
-  - { vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/config", desc: "Persistent config files" }
+  - {vol_path: "/config", vol_host_path: "/path/to/{{ project_name }}/config", desc: "Persistent config files"}
 param_usage_include_ports: true
 param_ports:
-  - { external_port: "9000", internal_port: "9000", port_desc: "Application WebUI" }
-
+  - {external_port: "9000", internal_port: "9000", port_desc: "Application WebUI"}
 readonly_supported: true
-
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
@@ -59,31 +54,72 @@ app_setup_block: |
   * You should now be prompted for a username and password on the web interface.
 
   * Once logged in, you can add an IRC network. Some defaults are preset for Freenode
-
+# init diagram
+init_diagram: |
+  "thelounge:latest": {
+    docker-mods
+    base {
+      fix-attr +\nlegacy cont-init
+    }
+    docker-mods -> base
+    legacy-services
+    custom services
+    init-services -> legacy-services
+    init-services -> custom services
+    custom services -> legacy-services
+    legacy-services -> ci-service-check
+    init-migrations -> init-adduser
+    init-os-end -> init-config
+    init-config -> init-config-end
+    init-thelounge-config -> init-config-end
+    init-os-end -> init-crontab-config
+    init-mods-end -> init-custom-files
+    base -> init-envfile
+    base -> init-migrations
+    base -> init-mods
+    init-config-end -> init-mods
+    init-mods -> init-mods-end
+    init-mods-package-install -> init-mods-end
+    init-mods -> init-mods-package-install
+    base -> init-os-end
+    init-adduser -> init-os-end
+    init-envfile -> init-os-end
+    init-migrations -> init-os-end
+    init-custom-files -> init-services
+    init-mods-end -> init-services
+    init-config -> init-thelounge-config
+    init-services -> svc-cron
+    svc-cron -> legacy-services
+    init-services -> svc-thelounge
+    svc-thelounge -> legacy-services
+  }
+  Base Images: {
+    "baseimage-alpine:3.20"
+  }
+  "thelounge:latest" <- Base Images
 # changelog
-
 changelogs:
-  - { date: "06.06.24:", desc: "Rebase to Alpine 3.20."}
-  - { date: "23.12.23:", desc: "Rebase to Alpine 3.19."}
-  - { date: "25.05.23:", desc: "Rebase to Alpine 3.18, deprecate armhf." }
-  - { date: "18.12.22:", desc: "Rebasing master to alpine 3.17." }
-  - { date: "24.10.22:", desc: "Fix sqlite3 build." }
-  - { date: "12.04.22:", desc: "Install from source using yarn." }
-  - { date: "11.04.22:", desc: "Rebasing to alpine 3.15 and switching from python2-dev to python3-dev for building node sqlite on arm." }
-  - { date: "23.01.21:", desc: "Rebasing to alpine 3.13." }
-  - { date: "02.06.20:", desc: "Rebasing to alpine 3.12." }
-  - { date: "19.12.19:", desc: "Rebasing to alpine 3.11." }
-  - { date: "28.06.19:", desc: "Rebasing to alpine 3.10." }
-  - { date: "15.05.19:", desc: "Update Arm variant images to build sqlite3 module." }
-  - { date: "23.03.19:", desc: "Switching to new Base images, shift to arm32v7 tag." }
-  - { date: "22.02.19:", desc: "Rebasing to alpine 3.9." }
-  - { date: "28.01.19:", desc: "Add pipeline logic and multi arch." }
-  - { date: "25.08.18:", desc: "Use global install, simplifies adding users." }
-  - { date: "20.08.18:", desc: "Rebase to alpine 3.8." }
-  - { date: "06.01.18:", desc: "Rebase to alpine 3.7." }
-  - { date: "26.05.17:", desc: "Rebase to alpine 3.6." }
-  - { date: "06.02.17:", desc: "Rebase to alpine 3.5." }
-  - { date: "14.10.16:", desc: "Bump to pickup 2.10 release." }
-  - { date: "14.10.16:", desc: "Add version layer information." }
-  - { date: "11.09.16:", desc: "Add layer badges to README." }
-  - { date: "31.08.16:", desc: "Initial Release." }
+  - {date: "06.06.24:", desc: "Rebase to Alpine 3.20."}
+  - {date: "23.12.23:", desc: "Rebase to Alpine 3.19."}
+  - {date: "25.05.23:", desc: "Rebase to Alpine 3.18, deprecate armhf."}
+  - {date: "18.12.22:", desc: "Rebasing master to alpine 3.17."}
+  - {date: "24.10.22:", desc: "Fix sqlite3 build."}
+  - {date: "12.04.22:", desc: "Install from source using yarn."}
+  - {date: "11.04.22:", desc: "Rebasing to alpine 3.15 and switching from python2-dev to python3-dev for building node sqlite on arm."}
+  - {date: "23.01.21:", desc: "Rebasing to alpine 3.13."}
+  - {date: "02.06.20:", desc: "Rebasing to alpine 3.12."}
+  - {date: "19.12.19:", desc: "Rebasing to alpine 3.11."}
+  - {date: "28.06.19:", desc: "Rebasing to alpine 3.10."}
+  - {date: "15.05.19:", desc: "Update Arm variant images to build sqlite3 module."}
+  - {date: "23.03.19:", desc: "Switching to new Base images, shift to arm32v7 tag."}
+  - {date: "22.02.19:", desc: "Rebasing to alpine 3.9."}
+  - {date: "28.01.19:", desc: "Add pipeline logic and multi arch."}
+  - {date: "25.08.18:", desc: "Use global install, simplifies adding users."}
+  - {date: "20.08.18:", desc: "Rebase to alpine 3.8."}
+  - {date: "06.01.18:", desc: "Rebase to alpine 3.7."}
+  - {date: "26.05.17:", desc: "Rebase to alpine 3.6."}
+  - {date: "06.02.17:", desc: "Rebase to alpine 3.5."}
+  - {date: "14.10.16:", desc: "Bump to pickup 2.10 release."}
+  - {date: "14.10.16:", desc: "Add version layer information."}
+  - {date: "11.09.16:", desc: "Add layer badges to README."}
+  - {date: "31.08.16:", desc: "Initial Release."}
