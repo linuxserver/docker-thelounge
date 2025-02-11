@@ -487,7 +487,7 @@ cssnano-preset-default                                                         5
 cssnano-utils                                                                  3.1.0                  npm                     
 csso                                                                           4.2.0                  npm                     
 csstype                                                                        2.6.20                 npm                     
-curl                                                                           8.11.1-r0              apk                     
+curl                                                                           8.12.0-r0              apk                     
 data-view-buffer                                                               1.0.1                  npm                     
 data-view-byte-length                                                          1.0.1                  npm                     
 data-view-byte-offset                                                          1.0.0                  npm                     
@@ -804,8 +804,8 @@ libacl                                                                         2
 libattr                                                                        2.5.2-r0               apk                     
 libbase64                                                                      0.5.2-r0               apk                     
 libbsd                                                                         0.12.2-r0              apk                     
-libcrypto3                                                                     3.3.2-r1               apk                     
-libcurl                                                                        8.11.1-r0              apk                     
+libcrypto3                                                                     3.3.2-r2               apk                     
+libcurl                                                                        8.12.0-r0              apk                     
 libgcc                                                                         13.2.1_git20240309-r0  apk                     
 libidn2                                                                        2.3.7-r0               apk                     
 libintl                                                                        0.22.5-r0              apk                     
@@ -813,7 +813,7 @@ libmd                                                                          1
 libncursesw                                                                    6.4_p20240420-r2       apk                     
 libproc2                                                                       4.0.4-r0               apk                     
 libpsl                                                                         0.21.5-r1              apk                     
-libssl3                                                                        3.3.2-r1               apk                     
+libssl3                                                                        3.3.2-r2               apk                     
 libstdc++                                                                      13.2.1_git20240309-r0  apk                     
 libunistring                                                                   1.2-r0                 apk                     
 lilconfig                                                                      2.0.6                  npm                     
