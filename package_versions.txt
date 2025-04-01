@@ -1150,7 +1150,7 @@ type-fest                                                                      0
 type-is                                                                        1.6.18                 npm                     
 typedarray-to-buffer                                                           3.1.5                  npm                     
 typescript                                                                     4.7.2                  npm                     
-tzdata                                                                         2025a-r0               apk                     
+tzdata                                                                         2025b-r0               apk                     
 ua-parser-js                                                                   1.0.33                 npm                     
 uc.micro                                                                       1.0.6                  npm                     
 unbox-primitive                                                                1.0.2                  npm                     
