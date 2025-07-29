@@ -17,6 +17,7 @@ RUN \
   apk add --no-cache --virtual=build-dependencies \
     build-base \
     git \
+    py3-setuptools \
     python3-dev && \
   echo "**** install runtime packages ****" && \
   apk add --no-cache \
