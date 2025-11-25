@@ -399,8 +399,8 @@ buffer                                                                         5
 buffer                                                                         6.0.3             npm                     
 buffer-equal-constant-time                                                     1.0.1             npm                     
 buffer-from                                                                    1.1.2             npm                     
-busybox                                                                        1.37.0-r19        apk                     
-busybox-binsh                                                                  1.37.0-r19        apk                     
+busybox                                                                        1.37.0-r20        apk                     
+busybox-binsh                                                                  1.37.0-r20        apk                     
 bytes                                                                          3.1.2             npm                     
 c-ares                                                                         1.34.5-r0         apk                     
 ca-certificates                                                                20250911-r0       apk                     
@@ -773,7 +773,7 @@ istanbul-lib-source-maps                                                       4
 istanbul-reports                                                               3.1.5             npm                     
 jackspeak                                                                      2.3.6             npm                     
 jest-worker                                                                    27.5.1            npm                     
-jq                                                                             1.8.0-r0          apk                     
+jq                                                                             1.8.1-r0          apk                     
 js-beautify                                                                    1.15.1            npm                     
 js-cookie                                                                      3.0.5             npm                     
 js-tokens                                                                      4.0.0             npm                     
@@ -1183,7 +1183,7 @@ sprintf-js                                                                     1
 sprintf-js                                                                     1.1.3             npm                     
 sqlite-libs                                                                    3.49.2-r1         apk                     
 sqlite3                                                                        5.1.7             npm                     
-ssl_client                                                                     1.37.0-r19        apk                     
+ssl_client                                                                     1.37.0-r20        apk                     
 ssri                                                                           8.0.1             npm                     
 stable                                                                         0.1.8             npm                     
 statuses                                                                       2.0.1             npm                     
