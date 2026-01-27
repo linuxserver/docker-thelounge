@@ -916,7 +916,7 @@ node-gyp                                                                       8
 node-preload                                                                   0.2.1             npm                     
 node-releases                                                                  2.0.18            npm                     
 node-releases                                                                  2.0.6             npm                     
-nodejs                                                                         22.16.0-r2        apk                     
+nodejs                                                                         22.22.0-r0        apk                     
 nopt                                                                           5.0.0             npm                     
 nopt                                                                           7.2.1             npm                     
 normalize-package-data                                                         2.5.0             npm                     
