@@ -192,7 +192,7 @@ NAME                                                                           V
 @socket.io/component-emitter                                                   3.1.0             npm                     
 @szmarczak/http-timer                                                          4.0.6             npm                     
 @textcomplete/core                                                             0.1.10            npm                     
-@textcomplete/textarea                                                         0.1.13            npm                     
+@textcomplete/textarea                                                         0.1.10            npm                     
 @textcomplete/utils                                                            0.1.13            npm                     
 @tokenizer/token                                                               0.3.0             npm                     
 @trysound/sax                                                                  0.2.0             npm                     
