@@ -252,7 +252,6 @@ NAME                                                                           V
 @types/sinonjs__fake-timers                                                    8.1.2             npm                     
 @types/sortablejs                                                              1.15.8            npm                     
 @types/ua-parser-js                                                            0.7.39            npm                     
-@types/uuid                                                                    8.3.4             npm                     
 @types/web-push                                                                3.3.2             npm                     
 @types/webpack-env                                                             1.16.4            npm                     
 @types/webpack-hot-middleware                                                  2.25.6            npm                     
@@ -1205,7 +1204,7 @@ test-exclude                                                                   6
 text-decoding                                                                  1.0.0             npm                     
 text-table                                                                     0.2.0             npm                     
 textarea-caret                                                                 3.1.0             npm                     
-thelounge                                                                      4.5.0-pre.1       npm   (+1 duplicate)    
+thelounge                                                                      4.5.0-rc.1        npm   (+1 duplicate)    
 thelounge-package-foo                                                          dummy             npm                     
 thingies                                                                       2.6.0             npm                     
 tinyglobby                                                                     0.2.16            npm                     
