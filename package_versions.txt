@@ -252,7 +252,6 @@ NAME                                                                           V
 @types/sinonjs__fake-timers                                                    8.1.2             npm                     
 @types/sortablejs                                                              1.15.8            npm                     
 @types/ua-parser-js                                                            0.7.39            npm                     
-@types/uuid                                                                    8.3.4             npm                     
 @types/web-push                                                                3.3.2             npm                     
 @types/webpack-env                                                             1.16.4            npm                     
 @types/webpack-hot-middleware                                                  2.25.6            npm                     
