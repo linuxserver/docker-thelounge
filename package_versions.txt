@@ -886,7 +886,7 @@ ncurses-terminfo-base                                                          6
 negotiator                                                                     0.6.3             npm                     
 neo-async                                                                      2.6.2             npm                     
 netcat-openbsd                                                                 1.229.1-r0        apk                     
-nghttp2-libs                                                                   1.65.0-r0         apk                     
+nghttp2-libs                                                                   1.69.0-r0         apk                     
 nice-try                                                                       1.0.5             npm                     
 nise                                                                           4.1.0             npm                     
 nise                                                                           5.1.4             npm                     
