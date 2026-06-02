@@ -104,7 +104,6 @@ NAME                                             VERSION           TYPE
 @types/express-serve-static-core                 4.19.8            npm                     
 @types/http-cache-semantics                      4.2.0             npm                     
 @types/http-errors                               2.0.5             npm                     
-@types/is-utf8                                   0.2.3             npm                     
 @types/json-schema                               7.0.15            npm                     
 @types/keyv                                      3.1.4             npm                     
 @types/ldapjs                                    2.2.5             npm                     
@@ -116,7 +115,7 @@ NAME                                             VERSION           TYPE
 @types/mousetrap                                 1.6.15            npm                     
 @types/node                                      14.18.63          npm                     
 @types/node                                      22.19.17          npm                     
-@types/node                                      25.9.1            npm   (+14 duplicates)  
+@types/node                                      25.9.1            npm   (+13 duplicates)  
 @types/normalize-package-data                    2.4.4             npm                     
 @types/parse-json                                4.0.2             npm                     
 @types/qs                                        6.15.1            npm                     
@@ -512,7 +511,6 @@ is-stream                                        2.0.1             npm
 is-string                                        1.1.1             npm                     
 is-symbol                                        1.1.1             npm                     
 is-typed-array                                   1.1.15            npm                     
-is-utf8                                          0.2.1             npm                     
 is-weakmap                                       2.0.2             npm                     
 is-weakref                                       1.1.1             npm                     
 is-weakset                                       2.0.4             npm                     
@@ -663,7 +661,6 @@ oniguruma                                        6.9.10-r0         apk
 optionator                                       0.9.4             npm                     
 own-keys                                         1.0.1             npm                     
 p-cancelable                                     2.1.1             npm                     
-p-finally                                        1.0.0             npm                     
 p-limit                                          2.3.0             npm                     
 p-limit                                          3.1.0             npm                     
 p-locate                                         4.1.0             npm                     
@@ -698,7 +695,6 @@ picomatch                                        4.0.4             npm
 pidtree                                          0.3.1             npm                     
 pify                                             2.3.0             npm                     
 pify                                             3.0.0             npm                     
-pify                                             4.0.1             npm   (+1 duplicate)    
 possible-typed-array-names                       1.1.0             npm                     
 postcss                                          8.4.47            npm                     
 postcss                                          8.5.15            npm   (+1 duplicate)    
@@ -787,7 +783,6 @@ raw-body                                         2.5.2             npm
 rc                                               1.2.8             npm                     
 read                                             1.0.7             npm                     
 read-cache                                       1.0.0             npm                     
-read-chunk                                       3.2.0             npm                     
 read-pkg                                         3.0.0             npm                     
 read-pkg                                         5.2.0             npm                     
 read-pkg-up                                      7.0.1             npm                     
@@ -948,7 +943,7 @@ undate                                           0.3.0             npm
 undici                                           6.26.0            npm                     
 undici                                           7.24.7            npm                     
 undici-types                                     6.21.0            npm                     
-undici-types                                     7.24.6            npm   (+14 duplicates)  
+undici-types                                     7.24.6            npm   (+13 duplicates)  
 unpipe                                           1.0.0             npm                     
 update-browserslist-db                           1.2.3             npm                     
 uri-js                                           4.4.1             npm                     
@@ -985,7 +980,6 @@ which-builtin-type                               1.2.1             npm
 which-collection                                 1.0.2             npm                     
 which-typed-array                                1.1.21            npm                     
 why-is-node-running                              2.3.0             npm                     
-with-open-file                                   0.1.7             npm                     
 word-wrap                                        1.2.5             npm                     
 wrap-ansi                                        7.0.0             npm                     
 wrap-ansi                                        8.1.0             npm                     
