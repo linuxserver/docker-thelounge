@@ -62,12 +62,16 @@ NAME                                             VERSION           TYPE
 @nodelib/fs.stat                                 2.0.5             npm                     
 @nodelib/fs.walk                                 1.2.8             npm                     
 @one-ini/wasm                                    0.1.1             npm                     
-@oxc-project/types                               0.124.0           npm                     
+@oxc-project/types                               0.124.0           npm   (+1 duplicate)    
+@oxc-project/types                               0.133.0           npm   (+1 duplicate)    
 @pkgjs/parseargs                                 0.11.0            npm                     
-@rolldown/binding-linux-x64-gnu                  1.0.0-rc.15       npm                     
-@rolldown/binding-linux-x64-musl                 1.0.0-rc.15       npm                     
-@rolldown/pluginutils                            1.0.0-rc.15       npm                     
+@rolldown/binding-linux-x64-gnu                  1.0.0-rc.15       npm   (+1 duplicate)    
+@rolldown/binding-linux-x64-gnu                  1.0.3             npm   (+1 duplicate)    
+@rolldown/binding-linux-x64-musl                 1.0.0-rc.15       npm   (+1 duplicate)    
+@rolldown/binding-linux-x64-musl                 1.0.3             npm   (+1 duplicate)    
+@rolldown/pluginutils                            1.0.0-rc.15       npm   (+1 duplicate)    
 @rolldown/pluginutils                            1.0.0-rc.2        npm                     
+@rolldown/pluginutils                            1.0.1             npm   (+1 duplicate)    
 @sindresorhus/is                                 4.6.0             npm                     
 @sinonjs/commons                                 1.8.6             npm                     
 @sinonjs/commons                                 3.0.1             npm                     
@@ -644,9 +648,9 @@ picomatch                                        4.0.4             npm
 pidtree                                          0.5.0             npm                     
 pify                                             2.3.0             npm                     
 possible-typed-array-names                       1.1.0             npm                     
-postcss                                          8.4.47            npm                     
-postcss                                          8.5.15            npm   (+1 duplicate)    
-postcss                                          8.5.9             npm                     
+postcss                                          8.5.10            npm                     
+postcss                                          8.5.15            npm   (+3 duplicates)   
+postcss                                          8.5.9             npm   (+1 duplicate)    
 postcss-attribute-case-insensitive               5.0.2             npm                     
 postcss-calc                                     8.2.4             npm                     
 postcss-clamp                                    3.0.0             npm                     
@@ -750,7 +754,8 @@ resolve-pkg-maps                                 1.0.0             npm
 responselike                                     2.0.1             npm                     
 reusify                                          1.1.0             npm                     
 rimraf                                           3.0.2             npm                     
-rolldown                                         1.0.0-rc.15       npm                     
+rolldown                                         1.0.0-rc.15       npm   (+1 duplicate)    
+rolldown                                         1.0.3             npm   (+1 duplicate)    
 run-parallel                                     1.2.0             npm                     
 safe-buffer                                      5.2.1             npm                     
 safe-regex-test                                  1.1.0             npm                     
@@ -834,11 +839,12 @@ table                                            6.9.0             npm
 text-decoding                                    1.0.0             npm                     
 text-table                                       0.2.0             npm                     
 textarea-caret                                   3.1.0             npm                     
-thelounge                                        4.5.1-pre.1       npm   (+1 duplicate)    
+thelounge                                        4.5.1-rc.1        npm   (+1 duplicate)    
 thelounge-package-foo                            dummy             npm                     
 tinybench                                        2.9.0             npm                     
 tinyexec                                         1.1.1             npm                     
 tinyglobby                                       0.2.16            npm                     
+tinyglobby                                       0.2.17            npm   (+1 duplicate)    
 tinyrainbow                                      3.1.0             npm                     
 tlds                                             1.228.0           npm                     
 tldts                                            7.0.28            npm                     
@@ -886,7 +892,8 @@ vary                                             1.1.2             npm
 vasync                                           2.2.1             npm                     
 verror                                           1.10.0            npm                     
 verror                                           1.10.1            npm                     
-vite                                             8.0.8             npm                     
+vite                                             8.0.16            npm                     
+vite                                             8.0.8             npm   (+1 duplicate)    
 vitest                                           4.1.4             npm                     
 vue                                              3.2.35            npm                     
 vue-component-type-helpers                       2.2.12            npm                     
