@@ -896,7 +896,7 @@ node-forge-flash                                                               0
 node-preload                                                                   0.2.1             npm                     
 node-releases                                                                  2.0.37            npm                     
 node-releases                                                                  2.0.6             npm                     
-nodejs                                                                         22.22.2-r0        apk                     
+nodejs                                                                         22.23.0-r0        apk                     
 nopt                                                                           7.2.1             npm                     
 normalize-package-data                                                         2.5.0             npm                     
 normalize-package-data                                                         3.0.3             npm                     
