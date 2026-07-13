@@ -118,7 +118,7 @@ NAME                                             VERSION           TYPE
 @types/minimist                                  1.2.5             npm                     
 @types/mousetrap                                 1.6.15            npm                     
 @types/node                                      14.18.63          npm                     
-@types/node                                      22.19.17          npm                     
+@types/node                                      24.13.3           npm                     
 @types/node                                      25.9.1            npm   (+12 duplicates)  
 @types/normalize-package-data                    2.4.4             npm                     
 @types/parse-json                                4.0.2             npm                     
@@ -865,7 +865,7 @@ uc.micro                                         1.0.6             npm
 undate                                           0.3.0             npm                     
 undici                                           6.26.0            npm                     
 undici                                           7.24.7            npm                     
-undici-types                                     6.21.0            npm                     
+undici-types                                     7.18.2            npm                     
 undici-types                                     7.24.6            npm   (+12 duplicates)  
 unpipe                                           1.0.0             npm                     
 update-browserslist-db                           1.2.3             npm                     
