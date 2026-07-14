@@ -24,8 +24,7 @@ NAME                                             VERSION           TYPE
 @babel/types                                     7.29.0            npm                     
 @babel/types                                     7.29.7            npm   (+2 duplicates)   
 @bramus/specificity                              2.4.2             npm                     
-@cspotcode/source-map-consumer                   0.8.0             npm                     
-@cspotcode/source-map-support                    0.7.0             npm                     
+@cspotcode/source-map-support                    0.8.1             npm                     
 @csstools/color-helpers                          6.0.2             npm                     
 @csstools/css-calc                               3.1.1             npm                     
 @csstools/css-color-parser                       4.0.2             npm                     
@@ -56,6 +55,7 @@ NAME                                             VERSION           TYPE
 @jridgewell/resolve-uri                          3.1.2             npm                     
 @jridgewell/sourcemap-codec                      1.5.5             npm                     
 @jridgewell/trace-mapping                        0.3.31            npm                     
+@jridgewell/trace-mapping                        0.3.9             npm                     
 @my-scope/package-a                              0.0.0             npm                     
 @my-scope/package-b                              0.0.0             npm                     
 @nodelib/fs.scandir                              2.1.5             npm                     
@@ -847,7 +847,7 @@ tr46                                             6.0.0             npm
 trim-newlines                                    3.0.1             npm                     
 trim-repeated                                    1.0.0             npm                     
 ts-api-utils                                     1.4.3             npm                     
-ts-node                                          10.7.0            npm                     
+ts-node                                          10.9.2            npm                     
 ts-sinon                                         2.0.2             npm                     
 tsx                                              4.21.0            npm                     
 type-check                                       0.4.0             npm                     
@@ -858,7 +858,7 @@ type-fest                                        0.20.2            npm
 type-fest                                        0.6.0             npm                     
 type-fest                                        0.8.1             npm                     
 type-is                                          1.6.18            npm                     
-typescript                                       5.4.5             npm                     
+typescript                                       6.0.2             npm                     
 tzdata                                           2026b-r0          apk                     
 ua-parser-js                                     1.0.39            npm                     
 uc.micro                                         1.0.6             npm                     
