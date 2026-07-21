@@ -294,7 +294,7 @@ cssnano-preset-default                           5.2.14            npm
 cssnano-utils                                    3.1.0             npm                     
 csso                                             4.2.0             npm                     
 csstype                                          2.6.21            npm                     
-curl                                             8.14.1-r2         apk                     
+curl                                             8.14.1-r3         apk                     
 data-urls                                        7.0.0             npm                     
 dayjs                                            1.10.8            npm                     
 debug                                            2.6.9             npm   (+4 duplicates)   
@@ -511,7 +511,7 @@ libapk2                                          2.14.10-r0        apk
 libattr                                          2.5.2-r2          apk                     
 libbsd                                           0.12.2-r0         apk                     
 libcrypto3                                       3.5.7-r0          apk                     
-libcurl                                          8.14.1-r2         apk                     
+libcurl                                          8.14.1-r3         apk                     
 libgcc                                           14.2.0-r6         apk                     
 libidn2                                          2.3.7-r0          apk                     
 libintl                                          0.24.1-r0         apk                     
@@ -869,7 +869,7 @@ type-fest                                        0.6.0             npm
 type-fest                                        0.8.1             npm                     
 type-is                                          1.6.18            npm                     
 typescript                                       5.4.5             npm                     
-tzdata                                           2026b-r0          apk                     
+tzdata                                           2026c-r0          apk                     
 ua-parser-js                                     1.0.39            npm                     
 uc.micro                                         1.0.6             npm                     
 undate                                           0.3.0             npm                     
