@@ -518,7 +518,7 @@ lightningcss-linux-x64-gnu                       1.32.0            npm
 lightningcss-linux-x64-musl                      1.32.0            npm                     
 lilconfig                                        2.1.0             npm                     
 lines-and-columns                                1.2.4             npm                     
-linkify-it                                       3.0.3             npm                     
+linkify-it                                       5.0.2             npm                     
 linux-pam                                        1.7.0-r4          apk                     
 ljharb-monorepo-symlink-test                     0.0.0             npm                     
 locate-path                                      5.0.0             npm                     
@@ -861,7 +861,7 @@ type-is                                          1.6.18            npm
 typescript                                       6.0.2             npm                     
 tzdata                                           2026c-r0          apk                     
 ua-parser-js                                     1.0.39            npm                     
-uc.micro                                         1.0.6             npm                     
+uc.micro                                         2.1.0             npm                     
 undate                                           0.3.0             npm                     
 undici                                           6.26.0            npm                     
 undici                                           7.24.7            npm                     
